@@ -678,7 +678,7 @@ body {
   border-radius: 20px 20px 20px 20px;
   background-color: #f2f2f2;
     padding: 0px 20px 0px 0px;
-    width: 70%;
+    width: 60%;
     order: 1;
     margin: 0px 40px 29px 40px;
     padding: 20px 0px 0px 0px;
@@ -696,16 +696,30 @@ body {
  {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 0px 0px 45px;
-  width: 100%;
+  margin: 0 0 0 20px;
+  
+  justify-content: space-around;
+ }
+
+.hébergements h1 
+{
+  margin-left: 40px;
+}
+ .content figure
+ {
+    
+    
  }
 
  .auberge
  {
-   margin: 10px 29px 15px 0px;
+  
    border-radius: 20px 20px 20px 20px;
    background-color: white;
    box-shadow: 2px  2px 2px  2px white;
+  
+
+   
  }
 
  .auberge img
@@ -714,7 +728,8 @@ body {
    border-radius: 20px 20px 0px 0px;
    border: 5px;
    width: 300px;
-   padding: 1px 3px 3px 1px;
+   padding-right: 20px;
+   
  }
 
  .auberge figcaption h3 
@@ -723,17 +738,14 @@ body {
    font-size: 18px;
  }
 
- .auberge figcaption {
-   padding: 0px 0px 0px 15px;
- }
-
+ 
  
 
 
 
  .hotelport
  {
-  margin: 10px 29px 15px 0px;
+  
   border-radius: 20px 20px 20px 20px;
   background-color: white;
   box-shadow: 2px  2px 2px  2px white;
@@ -764,7 +776,7 @@ body {
 
 .hotelmer
 {
-  margin: 10px 29px 15px 0px;
+  
    border-radius: 20px 20px 20px 20px;
    background-color: white;
    box-shadow: 2px  2px 2px  2px white;
@@ -792,7 +804,7 @@ body {
 
 .aubergepanier 
 {
-  margin: 10px 29px 15px 0px;
+  
    border-radius: 20px 20px 20px 20px;
    background-color: white;
    box-shadow: 2px  2px 2px  2px white;
@@ -882,22 +894,27 @@ body {
 
 
 aside {
-  margin: 0px 20px 0px 20px;
-  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  width: 620px;
 }
 
 aside h2 {
-  font-weight: 800;
-  font-size: 22px;
-  display: flex;
-  justify-content: space-between;
-
+  margin-left: 20px;
 }
+
+
 
 .Hôtelsoleil {
   border-radius: 20px 20px 20px 20px;
   background-color: #fff;
+  width: 500px;
   box-shadow: 2px 2px 2px 2px #f2f2f2;
+  padding-bottom: 5px;
+  margin-left: 30px;
+  
   
 
 }
@@ -928,12 +945,165 @@ justify-content: space-between
 .Hôtelsoleil img 
 {
   
-    border-radius: 20px 20px 0px 0px;
-    border: 5px;
-    width: 317px;
+    border-radius: 20px 0 0 20px ;
+    border: 5px ;
+    width: 200px;
     height: 150px;
-    padding: 2px 3px 3px 1px;
+    padding: 4px 3px 1px 3px;
     
 }
 
 
+.coeur 
+{
+  border-radius: 20px 20px 20px 20px;
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  padding-bottom: 5px;
+  margin-left: 30px;
+  
+  
+}
+
+.coeur figure
+{
+  margin: auto;
+  display: flex;
+}
+
+.coeur figcaption
+{
+  padding: 0px 0px 0px 15px;
+}
+
+
+.coeur h2 
+{
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coeur p
+{
+  line-height: 3px;
+}
+
+.coeur img 
+{
+  border-radius: 20px 0 0 20px ;
+  border: 5px ;
+  width: 200px;
+  height: 150px;
+  padding: 4px 3px 1px 3px;
+  
+}
+
+.hotelbleu
+{
+  border-radius: 20px 20px 20px 20px;
+  background-color: #fff;
+  width: 500px;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  padding-bottom: 5px;
+  margin-left: 30px;
+  
+}
+
+.hotelbleu figure 
+{
+  margin: auto;
+  display: flex;
+}
+
+.hotelbleu figcaption
+{
+  padding: 0px 0px 0px 15px;
+}
+
+.hotelbleu h2
+{
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotelbleu p
+{
+  line-height: 3px;
+}
+
+.hotelbleu img 
+{
+  border-radius: 20px 0 0 20px ;
+  border: 5px ;
+  width: 200px;
+  height: 150px;
+  padding: 4px 3px 1px 3px;
+}
+
+.populaire article{
+  margin: 10px 0 20px 20px;
+}
+
+
+.activité
+{
+  
+ 
+}
+
+.main2 
+{
+
+}
+.vieuxport {
+  
+
+}
+
+.vieuxport img{
+
+  
+}
+
+.fort {
+ 
+}
+
+.fort img 
+{
+ 
+}
+.ile {
+ 
+}
+.ile img {
+ 
+}
+.parc
+{
+ 
+}
+.parc img {
+
+}
+.notre {
+ 
+
+{
+  
+ 
+}
+.parc2 {
+  
+  
+}
+.parc2 img
+{
+ 
+
+}
