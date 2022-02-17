@@ -358,8 +358,9 @@
 
 
 body {
-  width: 95%;
+
   margin: auto;
+  font-family: "Raleway", "Sans serif";
 }
 
 
@@ -371,7 +372,8 @@ body {
 #presentation img {
    margin-top: 20px;
    height: 50px;
-   margin-left: 20px;
+   margin-left: 36px;
+   
 }
 
 
@@ -408,6 +410,7 @@ body {
   position: relative;
   font-size: 1.5em;
   padding-top: 15px;
+  margin: 0 0 0 36px;
 }
 
 .titre p{
@@ -415,7 +418,7 @@ body {
   padding-bottom: 15px;
   font-size: large;
   bottom: 10px;
-  
+  margin-left: 36px;
   
 }
 
@@ -424,7 +427,7 @@ body {
 {
    position: relative;
   bottom: 27px;
-  margin-left: 5px;
+  margin-left: 40px;
   
 
 }
@@ -494,6 +497,8 @@ body {
   display: flex;
   align-items: baseline;
   position: relative;
+  margin-left: 36px;
+  margin-bottom: 10px;
   
  
 }
@@ -650,6 +655,7 @@ body {
   align-items: baseline;
   position: relative;
   margin-top: 20px;
+  margin-left: 36px;
 }
 
 #logement li 
@@ -899,6 +905,7 @@ aside {
   background-color: #f2f2f2;
   border-radius: 30px;
   width: 620px;
+  margin-left: 36px;
 }
 
 aside h2 {
@@ -1050,60 +1057,33 @@ justify-content: space-between
 }
 
 
-.activité
-{
-  
- 
-}
 
-.main2 
-{
-
-}
-.vieuxport {
-  
-
-}
-
-.vieuxport img{
-
+footer{
+  padding: 25px 0px 50px 0px;
+  background-color: #E4E3E8;
+  width: 100%;
   
 }
 
-.fort {
- 
-}
-
-.fort img 
-{
- 
-}
-.ile {
- 
-}
-.ile img {
- 
-}
-.parc
-{
- 
-}
-.parc img {
-
-}
-.notre {
- 
-
-{
-  
- 
-}
-.parc2 {
-  
+.footercontent {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 250px 0px 35px;
   
 }
-.parc2 img
-{
- 
 
-}
+.footercolumn
+{
+  display: flex;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  flex-direction: column;
+  }
+  
+
+  .footercolumn a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+  }
