@@ -670,109 +670,270 @@ body {
 
 
 
-  
-
-
-@media screen and (max-width: 768px )
-{
-    body
-    {
-    
-      width: auto;
-      margin: 0;
-      
-      
-    }
-    
-      #presentation 
-      {
-       
-        width: auto;
-        justify-content: center;
-        flex-direction: column;
-       align-items: center;
-     
-       
-      }
-
-      #presentation nav {
-        width: auto;
-      }
-
-      #presentation img {
-        display: flex;
-        justify-content: center;
-        width: 100px;
-        text-align: center;
-      }
-
-      #presentation nav a {
-       
-        padding: 20px;
-        border-bottom: 2px solid blue;
-      }
-
-      #presentation nav a:hover  {
-       
-        border-top: white;
-        padding: 20px;
-        
-      }
-
-      .titre {
-         
-         width: 45%;
-         margin: 30px 180px 0 180px;
-      
-      }
-      .titre h1 {
-        margin-bottom: 25px;
-      }
-
-
-      .box 
-      {
-        margin-left: 150px;
-        margin-top: 30px;
-      }
-
-        #filtres
-        {
-          flex-direction: column;
-          display: flex;
-        }
-
-        #filtres h1 
-        {
-          margin-left: 145px ;
-         
-        }
-
-        #filtres nav ul {
-          margin-left: 90px;
-         
-          
-          
-        }
-
-        #famille {
-         display: flex;
-         
-         align-items: flex-end;
-         
-        
-        }
-
-        #eco {
-         
-        }
-
-       
-        
-         
-        
-
-        
  
 
+.hébergements
+ {
+  border: 3px solid #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #f2f2f2;
+    padding: 0px 20px 0px 0px;
+    width: 70%;
+    order: 1;
+    margin: 0px 40px 29px 40px;
+    padding: 20px 0px 0px 0px;
+  
+ }
+
+ .hébergements  h1
+ {
+  font-size: 18px;      
+  font-weight: 700;
+  padding: 0px 20px 0px 20px;
+ }
+
+ .content
+ {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 0px 0px 45px;
+  width: 100%;
+ }
+
+ .auberge
+ {
+   margin: 10px 29px 15px 0px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: white;
+   box-shadow: 2px  2px 2px  2px white;
+ }
+
+ .auberge img
+ {
+  height: 150px;
+   border-radius: 20px 20px 0px 0px;
+   border: 5px;
+   width: 300px;
+   padding: 1px 3px 3px 1px;
+ }
+
+ .auberge figcaption h3 
+ {
+   line-height: 1px;
+   font-size: 18px;
+ }
+
+ .auberge figcaption {
+   padding: 0px 0px 0px 15px;
+ }
+
+ 
+
+
+
+ .hotelport
+ {
+  margin: 10px 29px 15px 0px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: white;
+  box-shadow: 2px  2px 2px  2px white;
+  
+ }
+
+ .hotelport img
+ {
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px;
+  width: 317px;
+  padding: 2px 3px 3px 1px;
+ }
+
+ .hotelport figcaption h3 
+ {
+  line-height: 1px;
+  font-size: 18px;
 }
+
+.hotelport figcaption
+{
+  
+    padding: 0px 0px 0px 15px;
+  
+}
+
+.hotelmer
+{
+  margin: 10px 29px 15px 0px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: white;
+   box-shadow: 2px  2px 2px  2px white;
+}
+
+.hotelmer img
+{
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px;
+  width: 317px;
+  padding: 2px 3px 3px 1px;
+}
+
+.hotelmer figcaption h3 
+{
+  line-height: 1px;
+  font-size: 18px;
+}
+
+.hotelmer figcaption 
+{
+  padding: 0px 0px 0px 15px;
+}
+
+.aubergepanier 
+{
+  margin: 10px 29px 15px 0px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: white;
+   box-shadow: 2px  2px 2px  2px white;
+}
+
+.aubergepanier img
+{
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px;
+  width: 317px;
+  padding: 2px 3px 3px 1px;
+}
+
+.aubergepanier figcaption h3
+{
+  line-height: 1px;
+  font-size: 18px;
+}
+
+.aubergepanier figcaption {
+  padding: 0px 0px 0px 15px;
+}
+
+
+.hotelamina 
+{
+  margin: 10px 29px 15px 0px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: white;
+   box-shadow: 2px  2px 2px  2px white;
+}
+
+.hotelamina img
+{
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px;
+  width: 317px;
+  padding: 2px 3px 3px 1px;
+}
+
+.hotelamina figcaption h3 
+{
+  line-height: 1px;
+  font-size: 18px;
+}
+
+.hotel figcaption
+{
+  
+  
+    padding: 0px 0px 0px 15px;
+}
+
+.hotelmouette
+{
+  margin: 10px 29px 15px 0px;
+   border-radius: 20px 20px 20px 20px;
+   background-color: white;
+   box-shadow: 2px  2px 2px  2px white;
+}
+
+.hotelmouette img 
+{
+  height: 150px;
+  border-radius: 20px 20px 0px 0px;
+  border: 5px;
+  width: 317px;
+  padding: 2px 3px 3px 1px;
+}
+
+.hotelmouette figcaption h3
+{
+  line-height: 1px;
+  font-size: 18px;
+}
+
+.hotelmouette figcaption
+{
+  padding: 0px 0px 0px 15px;
+}
+
+
+
+
+
+
+aside {
+  margin: 0px 20px 0px 20px;
+  padding: 10px 0px 10px 0px;
+}
+
+aside h2 {
+  font-weight: 800;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.Hôtelsoleil {
+  border-radius: 20px 20px 20px 20px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  
+
+}
+
+.Hôtelsoleil figure
+{
+  margin: auto;
+display: flex;
+}
+.Hôtelsoleil figcaption
+{
+  padding: 0px 0px 0px 15px;
+}
+
+.Hôtelsoleil h2 
+{
+  font-weight: 800;
+font-size: 22px;
+display: flex;
+justify-content: space-between
+}
+
+.Hôtelsoleil p 
+{
+  line-height: 3px;
+}
+
+.Hôtelsoleil img 
+{
+  
+    border-radius: 20px 20px 0px 0px;
+    border: 5px;
+    width: 317px;
+    height: 150px;
+    padding: 2px 3px 3px 1px;
+    
+}
+
+
