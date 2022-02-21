@@ -1102,3 +1102,179 @@ footer{
     color: black;
     font-size: 1.1em;
   }
+
+
+ #main2
+ {
+  display: flex;
+ }
+
+
+.vieuxport 
+{
+
+  
+  
+ 
+}
+ .vieuxport img 
+ {
+   width: 330px;
+   height: 503px;
+   border-radius: 20px 20px 0px 0px;
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   background-color: white;
+ }
+
+
+ .vieuxport figcaption
+ {
+ 
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   width: 330px;
+   border-radius: 0px 0px 10px 10px;
+   padding-bottom: 30px;
+   
+   
+   
+ }
+
+ .vieuxport a {
+ 
+   text-decoration: none;
+   color: black;
+   font-size: 1.2em;
+   margin: 30px 0 0 30px;
+   font-weight: bold;
+   
+   
+ }
+
+
+ .fort img
+ {
+  width: 330px;
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   background-color: white;
+ }
+
+ .fort figcaption
+ {
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  width: 330px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 30px;
+  
+ }
+
+ .fort a {
+   text-decoration: none;
+   color: black;
+   margin: 30px 0px 0px 30px ;
+   font-weight: bold;
+ }
+
+.ile img 
+{
+  width: 330px;
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   background-color: white;
+}
+
+.ile figcaption {
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  width: 330px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 30px;
+  
+}
+
+.ile a {
+  text-decoration: none;
+  color: black;
+  margin: 30px 0px 0px 30px ;
+  font-weight: bold;
+}
+
+
+.parc img 
+{
+  width: 330px;
+  height: 503px;
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  background-color: white;
+}
+
+.parc figcaption 
+{
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  width: 330px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 30px;
+}
+
+.parc a 
+{
+  text-decoration: none;
+  color: black;
+  margin: 30px 0px 0px 30px ;
+  font-weight: bold;
+}
+
+.notre img
+{
+  width: 330px;
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   background-color: white;
+}
+
+.notre figcaption
+{
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  width: 330px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 30px;
+}
+
+.notre a
+{
+  text-decoration: none;
+  color: black;
+  margin: 30px 0px 0px 30px ;
+  font-weight: bold;
+}
+
+
+.parc2 img 
+{
+  width: 330px;
+  height: 250px;
+  border-radius: 20px 20px 0px 0px;
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+   background-color: white;
+}
+
+.parc2 figcaption 
+{
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  width: 330px;
+  border-radius: 0px 0px 10px 10px;
+  padding-bottom: 30px
+}
+
+.parc2 a 
+{
+  text-decoration: none;
+  color: black;
+  margin: 30px 0px 0px 30px ;
+  font-weight: bold;
+}
+
+
