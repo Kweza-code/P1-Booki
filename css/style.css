@@ -677,19 +677,20 @@ body {
 #contenu {
   display: flex;
   
+  
 }
 
 .hébergements
  {
- position: relative;
+
+    
   border: 3px solid #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   background-color: #f2f2f2;
-    padding: 0px 20px 0px 0px;
-    width: 60%;
-    order: 1;
-    margin: 0px 40px 29px 40px;
-    padding: 20px 0px 0px 0px;
+  width: 60%;
+  margin: 0px 40px 29px 40px;
+  
+  
    
     
   
@@ -697,51 +698,46 @@ body {
 
  .hébergements  h1
  {
-  font-size: 18px;      
-  font-weight: 700;
-  padding: 0px 20px 0px 20px;
+   padding:20px  20px ;
  }
 
  .content
  {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 0 20px;
+  margin: 0px 0px 0px 45px;
+  width: 80%;
+
   
-  justify-content: space-around;
+  
+  
  }
 
 .hébergements h1 
 {
-  margin-left: 40px;
+
 }
  
 
  .auberge
  {
   
-   border-radius: 20px 20px 20px 20px;
-   background-color: white;
-   box-shadow: 2px  2px 2px  2px white;
-  
+  background-color: white;
+    
 
    
  }
 
  .auberge img
  {
-  height: 150px;
-   border-radius: 20px 20px 0px 0px;
-   border: 5px;
+  
    width: 300px;
-   padding-right: 20px;
    
  }
 
  .auberge figcaption h3 
  {
-   line-height: 1px;
-   font-size: 18px;
+
  }
 
  
@@ -752,146 +748,112 @@ body {
  .hotelport
  {
   
-  border-radius: 20px 20px 20px 20px;
   background-color: white;
-  box-shadow: 2px  2px 2px  2px white;
   
  }
 
  .hotelport img
  {
-  height: 150px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px;
-  width: 317px;
-  padding: 2px 3px 3px 1px;
+  width: 300px;
  }
 
  .hotelport figcaption h3 
  {
-  line-height: 1px;
-  font-size: 18px;
+  
 }
 
 .hotelport figcaption
 {
   
-    padding: 0px 0px 0px 15px;
+  
   
 }
 
 .hotelmer
 {
   
-   border-radius: 20px 20px 20px 20px;
-   background-color: white;
-   box-shadow: 2px  2px 2px  2px white;
+  background-color: white;
 }
 
 .hotelmer img
 {
-  height: 150px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px;
-  width: 317px;
-  padding: 2px 3px 3px 1px;
+  width: 280px;
+  height: 200px;
 }
 
 .hotelmer figcaption h3 
 {
-  line-height: 1px;
-  font-size: 18px;
+
 }
 
 .hotelmer figcaption 
 {
-  padding: 0px 0px 0px 15px;
+  
 }
 
 .aubergepanier 
 {
+  background-color: white;
   
-   border-radius: 20px 20px 20px 20px;
-   background-color: white;
-   box-shadow: 2px  2px 2px  2px white;
 }
 
 .aubergepanier img
 {
-  height: 150px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px;
-  width: 317px;
-  padding: 2px 3px 3px 1px;
+  width: 300px;
+  height: 200px;
 }
 
 .aubergepanier figcaption h3
 {
-  line-height: 1px;
-  font-size: 18px;
+
 }
 
 .aubergepanier figcaption {
-  padding: 0px 0px 0px 15px;
+ 
 }
 
 
 .hotelamina 
 {
-  margin: 10px 29px 15px 0px;
-   border-radius: 20px 20px 20px 20px;
-   background-color: white;
-   box-shadow: 2px  2px 2px  2px white;
+  background-color: white;
 }
 
 .hotelamina img
 {
-  height: 150px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px;
-  width: 317px;
-  padding: 2px 3px 3px 1px;
+  width: 290px;
+  height: 200px;
 }
 
 .hotelamina figcaption h3 
 {
-  line-height: 1px;
-  font-size: 18px;
+ 
 }
 
 .hotel figcaption
 {
   
   
-    padding: 0px 0px 0px 15px;
+    
 }
 
 .hotelmouette
 {
-  margin: 10px 29px 15px 0px;
-   border-radius: 20px 20px 20px 20px;
-   background-color: white;
-   box-shadow: 2px  2px 2px  2px white;
+  background-color: white;
 }
 
 .hotelmouette img 
 {
-  height: 150px;
-  border-radius: 20px 20px 0px 0px;
-  border: 5px;
-  width: 317px;
-  padding: 2px 3px 3px 1px;
+  width: 290px;
 }
 
 .hotelmouette figcaption h3
 {
-  line-height: 1px;
-  font-size: 18px;
+  
 }
 
 .hotelmouette figcaption
 {
-  padding: 0px 0px 0px 15px;
+ 
 }
 
 
@@ -1110,13 +1072,12 @@ footer{
  }
 
 
-.vieuxport 
-{
+
 
   
   
  
-}
+
  .vieuxport img 
  {
    width: 330px;
