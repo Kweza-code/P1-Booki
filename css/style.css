@@ -676,6 +676,13 @@ body {
 
 #contenu {
   display: flex;
+  flex-wrap: wrap;
+  
+  width: 100%;
+  align-items: baseline;
+ 
+
+ 
   
   
 }
@@ -687,8 +694,11 @@ body {
   border: 3px solid #f2f2f2;
   border-radius: 20px 20px 20px 20px;
   background-color: #f2f2f2;
-  width: 60%;
-  margin: 0px 40px 29px 40px;
+  width: 50%;
+  margin-left: 36px;
+
+  
+ 
   
   
    
@@ -705,8 +715,9 @@ body {
  {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px 0px 0px 45px;
-  width: 80%;
+  
+ 
+
 
   
   
@@ -722,7 +733,11 @@ body {
  .auberge
  {
   
-  background-color: white;
+  
+  
+
+ 
+  
     
 
    
@@ -730,8 +745,10 @@ body {
 
  .auberge img
  {
-  
-   width: 300px;
+  width: 300px;
+   background-color: white;
+   padding: 5px;
+ 
    
  }
 
@@ -748,13 +765,16 @@ body {
  .hotelport
  {
   
-  background-color: white;
   
+  
+  border-radius: 20px ;
  }
 
  .hotelport img
  {
-  width: 300px;
+  width: 300px; 
+  padding: 5px;
+  background-color: white;
  }
 
  .hotelport figcaption h3 
@@ -772,13 +792,17 @@ body {
 .hotelmer
 {
   
-  background-color: white;
+
+ 
+  
 }
 
 .hotelmer img
 {
-  width: 280px;
-  height: 200px;
+  width: 300px;
+   background-color: white;
+   padding: 5px;
+   height: 200px;
 }
 
 .hotelmer figcaption h3 
@@ -793,13 +817,18 @@ body {
 
 .aubergepanier 
 {
-  background-color: white;
+ 
+  
+
+  
   
 }
 
 .aubergepanier img
 {
   width: 300px;
+  background-color: white;
+  padding: 5px;
   height: 200px;
 }
 
@@ -815,12 +844,17 @@ body {
 
 .hotelamina 
 {
-  background-color: white;
+ 
+
+ 
+  
 }
 
 .hotelamina img
 {
-  width: 290px;
+  width: 300px;
+  background-color: white;
+  padding: 5px;
   height: 200px;
 }
 
@@ -838,12 +872,20 @@ body {
 
 .hotelmouette
 {
-  background-color: white;
+ 
+  margin: auto;
+  border-radius: 20px ;
+  
+  
 }
 
 .hotelmouette img 
 {
-  width: 290px;
+  width: 300px;
+  background-color: white;
+  padding: 5px;
+  height: 200px;
+  
 }
 
 .hotelmouette figcaption h3
@@ -869,10 +911,11 @@ aside {
   background-color: #f2f2f2;
   border-radius: 30px;
   width: 620px;
-  margin-left: 36px;
-  order: 2;
+  margin: 0;
+ 
   height: 814px;
   padding-left: 37px;
+  margin-left: 550px ;
 
 }
 .populaire
