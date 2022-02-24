@@ -358,7 +358,8 @@
 
 
 body {
-
+ padding-left: 30px;
+  padding-right: 30px;
   margin: auto;
   font-family: "Raleway", "Sans serif";
 }
@@ -372,7 +373,7 @@ body {
 #presentation img {
    margin-top: 20px;
    height: 50px;
-   margin-left: 36px;
+  
    
 }
 
@@ -386,9 +387,9 @@ body {
 
 
 #presentation nav ul li {
-  margin-right: 85px;
+  padding: 20px;
   font-size: 1.2em;
-  margin-top: 15px;
+  
 }
 
 #presentation nav ul li a
@@ -407,61 +408,53 @@ body {
   
 .titre h1 
 {
-  position: relative;
+  
   font-size: 1.5em;
   padding-top: 15px;
-  margin: 0 0 0 36px;
+;
 }
 
 .titre p{
-  position: relative;
+  
   padding-bottom: 15px;
   font-size: large;
   bottom: 10px;
-  margin-left: 36px;
+
   
 }
 
 
-.box
-{
-   position: relative;
-  bottom: 27px;
-  margin-left: 40px;
-  
 
-}
 
 .box input {
-  position: relative;
+  
   display: inline-block;
-  font-size: 30px;
+ 
   box-sizing: border-box;
-  margin-left: 30px;
+  
+  
 }
 
 
-.box input[type="text"]
+.box input[type="search"]
 {
-  width: 280px;
-  border: none;
+  width:310px;
   outline: none;
-  padding: 0 0 0 14px;
   height: 50px;
-  font-size: 1.3em;
-  border-radius: 25px 0 0 2;
+  font-size: 1.4em;
   border: 1px solid #F2F2F2;
-  padding-left: 30px;
+  
    font-weight: bold;
    color: black;
+   padding-left: 50px;
   
 }
 
 
 .box input[type="submit"]
 {
-  position: relative;
-  left: -35px;
+ 
+ 
   border-radius: 0 20px 20px 0;
   height: 50px;
   width: 150px;
@@ -471,181 +464,71 @@ body {
   cursor: pointer;
   background-color: #0065FC ;
   color: white;
+ 
+  
+  
   
   
   
 }
 
+
+
 #localisation a {
-  position: relative;
-  font-size: 25px;
+  
+  
   color: black;
   text-decoration: none;
   border-radius: 20px 0 0 20px;
-  bottom: 35px;
-  right: 10px;
   border: 1px solid  #E4E3E8;
-    font-size: 1.1em;
+  font-size: 1.1em;
   padding: 14px;
-  background-color:#F2F2F2; 
+  background-color:#F2F2F2;
+ 
  
   }
-  
+
+ 
 
 
 #filtres{
   display: flex;
   align-items: baseline;
-  position: relative;
-  margin-left: 36px;
-  margin-bottom: 10px;
+  font-size: 1.3em;
+
+ 
+
   
  
 }
 
-#filtres h1 {
-  font-size: 1.2em;
-}
 
-#eco nav ul
-{
-  display: flex;
+
+#filtres li  {
   list-style-type: none;
+  margin-right: 70px;
+   border: 3px solid #F2F2F2;
+   border-radius: 20px;
+   color: #0065FC;
+   cursor: pointer;
   
+   
 }
 
-#eco nav ul li 
+
+
+#filtres li i {
+  background-color: #DEEBFF;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+#filtres span 
 {
-  margin-right: 15px;
-  font-size: 1.2em;
-  border: 2px solid #DEEBFF;
-  border-radius: 30px;
-  position: absolute;
-  padding: 11px;
-  color:#0065FC ;
-  background-color:#DEEBFF ;
- 
- 
-}
+  padding: 0px 10px 0px 10px;
+  color: black;
+  font-weight: bold;
 
-#eco nav a 
-{
-  border: 4px solid #F2F2F2;
-  font-size: 1.3em;
-  padding: 10px 40px 10px 60px;
-  border-radius: 30px;
-  color: black ;
-  text-decoration: none;
-  
-}
-
-#eco nav a:hover {
-  color: red;
-}
-
-
-#famille nav ul {
-  display: flex;
-  list-style-type: none;
-}
-
-#famille nav ul li 
-{
-  margin-right: 15px;
-  font-size: 1.2em;
-  border: 2px solid #DEEBFF;
-  border-radius: 30px;
-  position: absolute;
-  padding: 11px;
-  color:#0065FC ;
-  background-color:#DEEBFF ;
- 
-}
-
-
-#famille nav a 
-{
-  border: 4px solid #F2F2F2;
-  font-size: 1.3em;
-  padding: 10px 40px 10px 60px;
-  border-radius: 30px;
-  color: black ;
-  text-decoration: none;
-  
-}
-
-
-#famille nav a:hover 
-{
-  color: red;
-}
-
-
-
-#amour nav ul 
-{
-  display: flex;
-  list-style-type: none;
-}
-
-#amour nav ul li
-{
-  margin-right: 15px;
-  font-size: 1.2em;
-  border: 2px solid #DEEBFF;
-  border-radius: 30px;
-  position: absolute;
-  padding: 11px;
-  color:#0065FC ;
-  background-color:#DEEBFF ;
-}
-
-#amour nav ul a
-{
-  border: 4px solid #F2F2F2;
-  font-size: 1.3em;
-  padding: 10px 40px 10px 60px;
-  border-radius: 30px;
-  color: black ;
-  text-decoration: none;
-}
-
-#amour nav a:hover {
-  color: red;
-}
-
-
-#animaux nav ul 
-{
-  display: flex;
-  list-style-type: none;
-}
-
-
-#animaux nav ul li
-{
-  margin-right: 15px;
-  font-size: 1.2em;
-  border: 2px solid #DEEBFF;
-  border-radius: 30px;
-  position: absolute;
-  padding: 11px;
-  color:#0065FC ;
-  background-color:#DEEBFF ;
-}
-
-#animaux nav a
-{
-  border: 4px solid #F2F2F2;
-  font-size: 1.3em;
-  padding: 10px 40px 10px 60px;
-  border-radius: 30px;
-  color: black ;
-  text-decoration: none;
-}
-
-#animaux nav a:hover{
-  color: red;
 }
 
 
@@ -653,428 +536,183 @@ body {
 {
   display: flex;
   align-items: baseline;
-  position: relative;
+  
   margin-top: 20px;
-  margin-left: 36px;
+  
 }
 
 #logement li 
 {
   margin-right: 20px;
-  position: relative;
+  
   border : 2px solid #F2F2F2;
   list-style-type: none;
   border-radius: 30px;
   padding: 5px 10px ;
   color: #0065FC ;
+ 
+ 
 }
+
+
 
 #logement h2{
   font-size: 1.2em;
   color: gray;
 }
 
-#contenu {
+ /*Hébergement */
+
+
+
+#contenugénéral 
+{
   display: flex;
-  flex-wrap: wrap;
-  
-  width: 100%;
-  align-items: baseline;
- 
-
- 
-  
-  
-}
-
-.hébergements
- {
-
-    
-  border: 3px solid #f2f2f2;
-  border-radius: 20px 20px 20px 20px;
-  background-color: #f2f2f2;
-  width: 50%;
-  margin-left: 36px;
-
-  
- 
-  
-  
-   
-    
-  
- }
-
- .hébergements  h1
- {
-   padding:20px  20px ;
- }
-
- .content
- {
-  display: flex;
-  flex-wrap: wrap;
-  
- 
-
-
-  
-  
-  
- }
-
-.hébergements h1 
-{
-
-}
- 
-
- .auberge
- {
-  
-  
-  
-
- 
-  
-    
-
-   
- }
-
- .auberge img
- {
-  width: 300px;
-   background-color: white;
-   padding: 5px;
- 
-   
- }
-
- .auberge figcaption h3 
- {
-
- }
-
- 
- 
-
-
-
- .hotelport
- {
-  
-  
-  
-  border-radius: 20px ;
- }
-
- .hotelport img
- {
-  width: 300px; 
-  padding: 5px;
-  background-color: white;
- }
-
- .hotelport figcaption h3 
- {
-  
-}
-
-.hotelport figcaption
-{
-  
-  
-  
-}
-
-.hotelmer
-{
-  
-
- 
-  
-}
-
-.hotelmer img
-{
-  width: 300px;
-   background-color: white;
-   padding: 5px;
-   height: 200px;
-}
-
-.hotelmer figcaption h3 
-{
-
-}
-
-.hotelmer figcaption 
-{
-  
-}
-
-.aubergepanier 
-{
- 
-  
-
-  
-  
-}
-
-.aubergepanier img
-{
-  width: 300px;
-  background-color: white;
-  padding: 5px;
-  height: 200px;
-}
-
-.aubergepanier figcaption h3
-{
-
-}
-
-.aubergepanier figcaption {
- 
-}
-
-
-.hotelamina 
-{
- 
-
- 
-  
-}
-
-.hotelamina img
-{
-  width: 300px;
-  background-color: white;
-  padding: 5px;
-  height: 200px;
-}
-
-.hotelamina figcaption h3 
-{
- 
-}
-
-.hotel figcaption
-{
-  
-  
-    
-}
-
-.hotelmouette
-{
  
   margin: auto;
-  border-radius: 20px ;
-  
-  
+  justify-content: space-between;
+
 }
 
-.hotelmouette img 
-{
-  width: 300px;
+
+
+ #content {
+ display: flex;
+  flex-wrap: wrap;
+ 
+  width: 60%;
+  border: 2px solid #F2F2F2 ;
+  background-color:#F2F2F2  ;
+    border-radius: 20px;
+ 
+  
+   
+ }
+
+ #contenu 
+ {
+   padding: 10px;
+ }
+
+.card {
+  display: flex;
+  
+  justify-content: center;
+  border: 2px white solid;
   background-color: white;
-  padding: 5px;
-  height: 200px;
+  width: auto;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 30px;
+  box-shadow: black;
+  padding: 3px;
+  
+  
+ 
+  
+}
+.card img {
+  width: 270px;
+  height: 120px;
+   border-radius: 20px 20px 0px 0px;
+  
+ 
+  
   
 }
 
-.hotelmouette figcaption h3
-{
+.card a {
+  list-style-type: none; 
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
   
-}
-
-.hotelmouette figcaption
-{
+  
  
 }
 
+.article-description
+{
+
+ padding: 0px 0px 10px 15px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ line-height: 5px;
+ font-size: 15px;
+}
+
+
+  
+ 
 
 
 
 
 
+
+/*Populaire*/ 
 
 aside {
-  
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
-  border-radius: 30px;
-  width: 620px;
-  margin: 0;
+  background-color: #F2F2F2;
+  padding: 0px 20px 20px 20px;
+  border-radius: 20px;
+  
+  
+}
+
+.card-populaire img {
+  width: 150px;
+  height: 135px;
+   border-radius: 25px 0px 0px 25px;
+
+}
+
+.card-populaire a {
+  display: flex;
  
-  height: 814px;
-  padding-left: 37px;
-  margin-left: 550px ;
-
-}
-.populaire
-{
- margin-top: 15px;
 }
 
-aside h2 {
-  margin-left: 20px;
-}
-
-
-.Hôtelsoleil {
-  border-radius: 20px 20px 20px 20px;
-  background-color: #fff;
-  width: 500px;
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  padding-bottom: 5px;
-  margin-left: 30px;
-  
-  
-
-}
-
-
-
-.Hôtelsoleil figure
-{
-  margin: auto;
-display: flex;
-}
-.Hôtelsoleil figcaption
-{
-  padding: 0px 0px 0px 15px;
-}
-
-.Hôtelsoleil h2 
-{
-  font-weight: 800;
-font-size: 22px;
-display: flex;
-justify-content: space-between
-}
-
-.Hôtelsoleil p 
-{
-  line-height: 3px;
-}
-
-.Hôtelsoleil img 
+.card-populaire 
 {
   
-    border-radius: 20px 0 0 20px ;
-    border: 5px ;
-    width: 200px;
-    height: 150px;
-    padding: 4px 3px 1px 6px;
-    
-}
-
-
-.coeur 
-{
-  border-radius: 20px 20px 20px 20px;
-  background-color: #fff;
-  width: 500px;
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  padding-bottom: 5px;
-  margin-left: 30px;
-  margin-bottom: 15px;
+  padding-right: 20
   
-  
-}
-
-.coeur figure
-{
-  margin: auto;
-  display: flex;
-}
-
-.coeur figcaption
-{
-  padding: 0px 0px 0px 15px;
-}
-
-
-.coeur h2 
-{
-  font-weight: 800;
-  font-size: 22px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.coeur p
-{
-  line-height: 3px;
-}
-
-.coeur img 
-{
-  border-radius: 20px 0 0 20px ;
-  border: 5px ;
-  width: 200px;
-  height: 150px;
-  padding: 4px 3px 1px 6px;
-  
-}
-
-.hotelbleu
-{
-  border-radius: 20px 20px 20px 20px;
-  background-color: #fff;
-  width: 500px;
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  padding-bottom: 5px;
-  
+  px;
  
+  border: 2px white solid;
+  background-color: white;
+  
+  
+  border-radius: 20px;
+  
+  box-shadow: black;
+   
+  margin-top: 20px;
   
 }
 
-.hotelbleu figure 
+.article-description-populaire
 {
-  margin: auto;
-  display: flex;
+  margin: 0px 5px 0px 15px;
+  color: black;
+  text-decoration: none;
+
 }
 
-.hotelbleu figcaption
+
+aside h2 i 
 {
-  padding: 0px 0px 0px 15px;
-}
-
-.hotelbleu h2
-{
-  font-weight: 800;
-  font-size: 22px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.hotelbleu p
-{
-  line-height: 3px;
-}
-
-.hotelbleu img 
-{
-  border-radius: 20px 0 0 20px ;
-  border: 5px ;
-  width: 200px;
-  height: 150px;
-  padding: 4px 3px 1px 6px;
+ display: flex;
+ margin-left: 80px;
+ font-size: 0.8em;
 }
 
 
 
-.populaire article{
-  margin: 10px 0 20px 20px;
-}
+
 
 /*footer desktop */
 
@@ -1112,6 +750,7 @@ footer{
  #main2
  {
   display: flex;
+  
  }
 
 
