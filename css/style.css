@@ -358,9 +358,8 @@
 
 
 body {
- padding-left: 40px;
-  padding-right: 40px;
-  margin: auto;
+ padding: 30px 30px;
+ margin: 10px;
   font-family: "Raleway", "Sans serif";
 }
 
@@ -400,7 +399,7 @@ body {
 #presentation nav a:hover {
   color:#0065FC;
   border-top: 4px solid #0065FC;
-  padding-top: 35px;
+  padding-top: 73px;
   
   
 }
@@ -420,35 +419,35 @@ body {
   
   padding-bottom: 15px;
   font-size: large;
-  bottom: 10px;
-
-  
-}
-
-
-
-
-.box input {
-  
-  display: inline-block;
  
-  box-sizing: border-box;
-  
+
   
 }
+
+.box {
+  
+ display: flex;
+  box-sizing: border-box;
+  align-items: baseline;
+  margin-bottom: 40px;
+  
+}
+
+
 
 
 .box input[type="search"]
 {
-  width:310px;
+  
   outline: none;
-  height: 50px;
+   padding: 17px;
   font-size: 1.4em;
   border: 1px solid #F2F2F2;
-  
    font-weight: bold;
    color: black;
-   padding-left: 50px;
+   padding-left: 30px;
+  
+  
   
 }
 
@@ -458,14 +457,15 @@ body {
  
  
   border-radius: 0 20px 20px 0;
-  height: 50px;
-  width: 150px;
+  padding: 17px;
   font-size: 1.3em;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: #0065FC ;
   color: white;
+  
+ 
  
   
   
@@ -476,7 +476,7 @@ body {
 
 
 
-#localisation a {
+#localisation span {
   
   
   color: black;
@@ -484,9 +484,15 @@ body {
   border-radius: 20px 0 0 20px;
   border: 1px solid  #E4E3E8;
   font-size: 1.1em;
-  padding: 14px;
+  padding: 20px;
   background-color:#F2F2F2;
+  flex-direction: column;
  
+
+ 
+ 
+  
+  
  
   }
 
@@ -514,10 +520,14 @@ body {
    border: 3px solid #F2F2F2;
    border-radius: 20px;
    color: #0065FC;
-   cursor: pointer;
+   cursor: pointer ;
+   
   
    
 }
+
+
+
 
 
 
@@ -533,6 +543,7 @@ body {
   padding: 0px 10px 0px 10px;
   color: black;
   font-weight: bold;
+ 
 
 }
 
@@ -574,37 +585,32 @@ body {
 #contenugénéral 
 {
   display: flex;
+ justify-content: space-between;
+
  
 
-  justify-content: space-between;
 
 }
 
 
 
  #content {
- display: flex;
-  flex-wrap: wrap;
- 
+  display: flex;
+  background-color: #F2F2F2;
+  padding: 60px;
+  border-radius: 20px;
+  
   width: 60%;
-  border: 2px solid #F2F2F2 ;
-  background-color:#F2F2F2  ;
-    border-radius: 20px;
+  flex-wrap: wrap;
  
   
    
  }
 
 
- #content h2
-  {
-    display: none;
-  }
 
- #contenu 
- {
-   padding: 30px;
- }
+
+
 
 .card {
   display: flex;
@@ -670,14 +676,15 @@ aside
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
-  padding: 0px 20px 20px 20px;
+  padding: 40px;
   border-radius: 20px;
+ 
 }
 
 .card-populaire img 
 {
-  width: 150px;
-  height: 175px;
+  width: 120px;
+  height: 140px;
    border-radius: 25px 0px 0px 25px;
 }
 
@@ -688,12 +695,12 @@ aside
 
 .card-populaire 
 {
-  padding-right: 20px;
   border: 2px white solid;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: black;
   margin-top: 20px;
+  padding: 3px;
 }
 
 .article-description-populaire
@@ -703,6 +710,7 @@ aside
   text-decoration: none;
   display: flex;
   flex-direction: column;
+  font-size: 0.8em;
 
   
 }
@@ -773,6 +781,7 @@ footer{
 #activityContent 
 {
   display: flex;
+  margin: 200px;
   
 }
 
