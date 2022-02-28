@@ -24,7 +24,7 @@
    */
   
   body {
-    margin: auto;
+   
   }
   
   /**
@@ -358,8 +358,8 @@
 
 
 body {
- padding-left: 30px;
-  padding-right: 30px;
+ padding-left: 40px;
+  padding-right: 40px;
   margin: auto;
   font-family: "Raleway", "Sans serif";
 }
@@ -400,9 +400,11 @@ body {
 #presentation nav a:hover {
   color:#0065FC;
   border-top: 4px solid #0065FC;
-  padding: 30px;
+  padding-top: 35px;
+  
   
 }
+
 
 
   
@@ -504,6 +506,8 @@ body {
 
 
 
+
+
 #filtres li  {
   list-style-type: none;
   margin-right: 70px;
@@ -520,16 +524,18 @@ body {
 #filtres li i {
   background-color: #DEEBFF;
   padding: 10px;
+  
   border-radius: 20px;
 }
 
-#filtres span 
+#filtres span
 {
   padding: 0px 10px 0px 10px;
   color: black;
   font-weight: bold;
 
 }
+
 
 
 #logement 
@@ -569,7 +575,7 @@ body {
 {
   display: flex;
  
-  margin: auto;
+
   justify-content: space-between;
 
 }
@@ -589,9 +595,15 @@ body {
    
  }
 
+
+ #content h2
+  {
+    display: none;
+  }
+
  #contenu 
  {
-   padding: 10px;
+   padding: 30px;
  }
 
 .card {
@@ -653,45 +665,35 @@ body {
 
 /*Populaire*/ 
 
-aside {
+aside 
+{
   display: flex;
   flex-direction: column;
   background-color: #F2F2F2;
   padding: 0px 20px 20px 20px;
   border-radius: 20px;
-  
-  
 }
 
-.card-populaire img {
+.card-populaire img 
+{
   width: 150px;
-  height: 135px;
+  height: 175px;
    border-radius: 25px 0px 0px 25px;
-
 }
 
-.card-populaire a {
+.card-populaire a
+ {
   display: flex;
- 
 }
 
 .card-populaire 
 {
-  
-  padding-right: 20
-  
-  px;
- 
+  padding-right: 20px;
   border: 2px white solid;
   background-color: white;
-  
-  
   border-radius: 20px;
-  
   box-shadow: black;
-   
   margin-top: 20px;
-  
 }
 
 .article-description-populaire
@@ -699,16 +701,22 @@ aside {
   margin: 0px 5px 0px 15px;
   color: black;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
 
+  
 }
 
 
 aside h2 i 
 {
  display: flex;
- margin-left: 80px;
+ margin-left: 100px;
  font-size: 0.8em;
 }
+
+
+
 
 
 
@@ -747,177 +755,33 @@ footer{
   }
 
 
- #main2
- {
+
+
+
+
+
+
+.description-activité
+{
+ color: black;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 2px 2px 2px  2px #F2F2F2 ;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#activityContent 
+{
   display: flex;
   
- }
+}
 
-
-
-
-  
-  
- 
-
- .vieuxport img 
- {
-   width: 330px;
-   height: 503px;
-   border-radius: 20px 20px 0px 0px;
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   background-color: white;
- }
-
-
- .vieuxport figcaption
- {
- 
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   width: 330px;
-   border-radius: 0px 0px 10px 10px;
-   padding-bottom: 30px;
-   
-   
-   
- }
-
- .vieuxport a {
- 
-   text-decoration: none;
-   color: black;
-   font-size: 1.2em;
-   margin: 30px 0 0 30px;
-   font-weight: bold;
-   
-   
- }
-
-
- .fort img
- {
-  width: 330px;
-  height: 250px;
+.activityCard img
+{
   border-radius: 20px 20px 0px 0px;
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   background-color: white;
- }
-
- .fort figcaption
- {
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  width: 330px;
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 30px;
-  
- }
-
- .fort a {
-   text-decoration: none;
-   color: black;
-   margin: 30px 0px 0px 30px ;
-   font-weight: bold;
- }
-
-.ile img 
-{
-  width: 330px;
-  height: 250px;
-  border-radius: 20px 20px 0px 0px;
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   background-color: white;
-}
-
-.ile figcaption {
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  width: 330px;
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 30px;
-  
-}
-
-.ile a {
-  text-decoration: none;
-  color: black;
-  margin: 30px 0px 0px 30px ;
-  font-weight: bold;
+  width: 400px;
 }
 
 
-.parc img 
-{
-  width: 330px;
-  height: 503px;
-  border-radius: 20px 20px 0px 0px;
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  background-color: white;
-}
-
-.parc figcaption 
-{
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  width: 330px;
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 30px;
-}
-
-.parc a 
-{
-  text-decoration: none;
-  color: black;
-  margin: 30px 0px 0px 30px ;
-  font-weight: bold;
-}
-
-.notre img
-{
-  width: 330px;
-  height: 250px;
-  border-radius: 20px 20px 0px 0px;
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   background-color: white;
-}
-
-.notre figcaption
-{
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  width: 330px;
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 30px;
-}
-
-.notre a
-{
-  text-decoration: none;
-  color: black;
-  margin: 30px 0px 0px 30px ;
-  font-weight: bold;
-}
-
-
-.parc2 img 
-{
-  width: 330px;
-  height: 250px;
-  border-radius: 20px 20px 0px 0px;
-   box-shadow: 2px 2px 2px 2px #f2f2f2;
-   background-color: white;
-}
-
-.parc2 figcaption 
-{
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  width: 330px;
-  border-radius: 0px 0px 10px 10px;
-  padding-bottom: 30px
-}
-
-.parc2 a 
-{
-  text-decoration: none;
-  color: black;
-  margin: 30px 0px 0px 30px ;
-  font-weight: bold;
-}
 
 
