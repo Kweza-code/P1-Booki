@@ -582,6 +582,12 @@ body {
  /*Hébergement */
 
 
+ #contenu 
+ {
+  background-color: #F2F2F2;
+  padding: 60px;
+  border-radius: 20px;
+ }
 
 #contenugénéral 
 {
@@ -597,9 +603,7 @@ body {
 
  #content {
   display: flex;
-  background-color: #F2F2F2;
-  padding: 60px;
-  border-radius: 20px;
+
   
   width: 60%;
   flex-wrap: wrap;
