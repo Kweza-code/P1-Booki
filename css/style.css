@@ -528,7 +528,10 @@ body {
 }
 
 
-
+#filtres li:hover 
+{
+  color: red;
+}
 
 
 
@@ -587,6 +590,7 @@ body {
   background-color: #F2F2F2;
   padding: 60px;
   border-radius: 20px;
+  width: 68%;
  }
 
 #contenugénéral 
@@ -604,10 +608,9 @@ body {
  #content {
   display: flex;
 
-  
-  width: 60%;
-  flex-wrap: wrap;
  
+  flex-wrap: wrap;
+  
   
    
  }
@@ -691,7 +694,7 @@ aside
   background-color: #F2F2F2;
   padding: 40px;
   border-radius: 20px;
-  
+  width: 30%;
  
 }
 
