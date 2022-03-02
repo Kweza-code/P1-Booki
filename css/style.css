@@ -359,7 +359,7 @@ font-family: 'Raleway', sans-serif;
 
 body {
 padding: 30px 30px;
-margin: 10px;
+
 font-family: "Raleway", "Sans serif";
 }
 
@@ -560,7 +560,7 @@ font-weight: bold;
 display: flex;
 align-items: baseline;
 
-margin-top: 20px;
+margin-bottom: 20px;
 
 }
 
@@ -601,6 +601,7 @@ width: 68%;
 display: flex;
 justify-content: space-between;
  margin: auto;
+
 }
 
 #affichez a
@@ -619,6 +620,7 @@ justify-content: space-between;
   display: flex;
 flex-wrap: wrap;
 justify-content:  space-between;
+
 
    
 
@@ -700,6 +702,7 @@ background-color: #F2F2F2;
 padding: 40px;
 border-radius: 20px;
 width: 30%;
+ justify-content: space-around;
 
 
 }
@@ -707,7 +710,7 @@ width: 30%;
 .card-populaire img 
 {
 width: 250px;
-height: 190px;
+height: 230px;
  border-radius: 25px 0px 0px 25px;
 }
 
@@ -722,9 +725,7 @@ border: 2px white solid;
 background-color: white;
 border-radius: 30px;
 box-shadow: black;
-  margin-bottom: 100px;
 padding: 3px;
-height: 200px;
 
 }
 
@@ -779,20 +780,20 @@ position: absolute;
 /*footer desktop */
 
 footer{
-padding: 25px 0px 50px 0px;
-background-color: #E4E3E8;
-width: 100%;
 
+background-color: #E4E3E8;
+ margin-top: 60px;
+ padding: 25px 0px 50px 0px;
 }
 
-.footercontent {
+#footercontent {
 display: flex;
-justify-content: space-between;
+ justify-content: space-between;
 margin: 0px 250px 0px 35px;
 
 }
 
-.footercolumn
+.footerColumn
 {
 display: flex;
 line-height: 30px;
@@ -802,7 +803,7 @@ flex-direction: column;
 }
 
 
-.footercolumn a {
+.footerColumn a {
   text-decoration: none;
   color: black;
   font-size: 1.1em;
@@ -811,27 +812,67 @@ flex-direction: column;
 
 
 
-
-
+/*Activité à Marseille */
 
 
 .description-activité
 {
-color: black;
-border-radius: 0px 0px 20px 20px;
-box-shadow: 2px 2px 2px  2px #F2F2F2 ;
-padding: 5px;
-text-decoration: none;
+ color: black;
+ margin-left: 10px;
+ padding: 3px;
+  
+ 
+
 }
 
 #activityContent 
 {
 display: flex;
+justify-content: space-between;
 
+}
+
+
+
+
+.activityCard{
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  border-radius: 20px;
 }
 
 .activityCard img
 {
 border-radius: 20px 20px 0px 0px;
 width: 400px;
+ height: 230px;
+}
+      
+
+.longbloc img
+{
+height: 500px;
+}
+
+
+
+
+
+
+#ile img {
+  height: 150px;
+}
+
+
+
+#notre img 
+{
+  height: 170px;
+}
+
+
+.bloc {
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column ;
+
 }
