@@ -770,6 +770,12 @@ position: absolute;
 
 }
 
+aside h2 
+{
+  font-size: 2em;
+  padding: 20px;
+}
+
 
 
 
@@ -883,27 +889,28 @@ height: 500px;
 
 }
 
-
+/*media screen pour tablette */
 
 @media screen and (max-width: 768px)
 {
   body {
     font-family: "Raleway", "Sans serif";
+      padding: 0;
   
-   
     }
     
     
     #presentation {
 
-     flex-direction: column;
-     align-items: center;
+     flex-direction:column;
+     align-items:center;
      
+   
     }
     
     #presentation img {
      margin-top: 20px;
-     width: 150px;
+     width: 135px;
     
      
     }
@@ -913,20 +920,13 @@ height: 500px;
     {
     text-decoration: none;
     list-style-type: none;
-    display: flex;
-    
     
     }
     
     
     #presentation nav ul li {
-    margin-right: 100px;
-    font-size: 1.5em;
-  
-   
-    
-    
-    
+    font-size: 1.8em; 
+    margin-right: 150px;
     }
     
     #presentation nav ul li a
@@ -945,25 +945,26 @@ height: 500px;
     }
     
     
-    
+     .titre{
+       margin: 0px 0px 0px 40px;
+     }
     
     .titre h1 
     {
     
     font-size: 2.5em;
     padding-top: 15px;
-    width: 90%
-    ;
+    width: 80%;
+     
+  
     }
     
     .titre p{
     
     padding-bottom: 15px;
-    font-size: 1.5em;
-
-    
-    
-    
+    font-size: 1.8em;
+     
+      
     }
     
     .box {
@@ -973,7 +974,6 @@ height: 500px;
     align-items: baseline;
     margin-bottom: 40px;
      padding: 20px;
-    
     }
     
     
@@ -983,8 +983,8 @@ height: 500px;
     {
     
     outline: none;
-     padding: 17px;
-    font-size: 1.4em;
+     padding: 25px;
+    font-size: 1.8em;
     border: 1px solid #F2F2F2;
      font-weight: bold;
      color: black;
@@ -997,429 +997,424 @@ height: 500px;
     
     .box input[type="submit"]
     {
-    
-    
     border-radius: 0 20px 20px 0;
-    padding: 17px;
-    font-size: 1.3em;
+    padding: 25px;
+    font-size: 1.5em;
     border: none;
     outline: none;
     cursor: pointer;
     background-color: #0065FC ;
     color: white;
-    
-    
-    
-    
-    
-    
-    
-    
-    
     }
     
     
     
     #localisation span {
-    
-    
     color: black;
     text-decoration: none;
     border-radius: 20px 0 0 20px;
     border: 1px solid  #E4E3E8;
-    font-size: 1.1em;
-    padding: 20px;
+    font-size: 1.5em;
+    padding: 28px;
     background-color:#F2F2F2;
     flex-direction: column;
-    
-    
-    
-    
-    
-    
-    
     }
     
     
     
     
-    #filtres {
-     display: block;
+    #filtres {   
      flex-direction: column;
-    align-items: baseline
-      
-       
-    
-    
-    
-    
     
     }
     
-    #filtres ul {
-      
-    }
-    
-    
-    
-    #filtres li  {
-
-    }
-    
-    
-    #filtres li:hover 
-    {
-     
-    }
-    
-    
-    
-    
-    #filtres li i {
    
+#filtres ul {
+  flex-wrap: wrap;
+ 
+} 
 
-  
-    }
-    
-    #filtres span
-    {
-   
+
+
+#filtres li  {
+ list-style-type: none;
+flex-basis: auto;
+ border: 3px solid #F2F2F2;
+ border-radius: 40px;
+ color: #0065FC;
+ cursor: pointer ;
+ margin-bottom: 30px;
+ 
+ 
+
+ 
+}
+
+
+#filtres li:hover 
+{
+ background-color: #DEEBFF;
+}
+
+
+
+
+#filtres li i {
+background-color: #DEEBFF;
+border-radius: 20px;
+padding: 15px;
+}
+
+#filtres span
+{
+
+color: black;
+font-weight: bold;
+padding: 15px;
+font-size: 1.2em;
+}
  
    
-    
-    
-    }
-    
-    
-    
-    #logement 
-    {
-    display: none;    
-    align-items: baseline;
-    margin-bottom: 20px;
-    
-    }
-    
-    #logement li 
-    {
-    margin-right: 20px;
-    
-    border : 2px solid #F2F2F2;
-    list-style-type: none;
-    border-radius: 30px;
-    padding: 5px 10px ;
-    color: #0065FC ;
-    
-    
-    }
-    
-    
-    
-    #logement h2{
-      
-    font-size: 1.2em;
-    color: gray;
-    }
-    
-    /*Hébergement */
-    
-    
-    #contenu 
-    {
-    background-color: #F2F2F2;
-    padding: 60px;
-    border-radius: 30px;
-    width: 68%;
-    
-    }
-    
-    #contenugénéral 
-    {
-      display: none;
-    
-    justify-content: space-between;
-     margin: auto;
-    
-    }
-    
-    #affichez a
-    {
-     color: black;
-     text-decoration: none;
-     font-weight: bold;
-    
-     
-      
-    }
-    
-    
-    
-    #content {
-      display: flex;
-    flex-wrap: wrap;
-    justify-content:  space-between;
-    
-    
-    
-       
-    
-    
-    }
-    
-    .price 
-    {
-    font-weight: bold;
-    }
-    
-    
-    
-    
-    .card {
-      display: none;
-     border: 2px white solid;
-     background-color: white;
-     border-radius: 30px;
-     margin-top: 50px;
-     padding: 8px;
-     
-     
-    }
-    .card img {
-    width: 400px;
-    height: 200px;
-     border-radius: 20px 20px 0px 0px;
-    }
-    
-    
-    
-    
-    .card a {
-    list-style-type: none; 
-    text-decoration: none;
-    color: black;
-    font-size: 0.9em;
-    }
-    
-    
-    
-    
-    .article-description
-    {
-    padding: 0px 0px 10px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    line-height: 5px;
-    font-size: 1.2em;
-    flex-wrap: wrap;
-    
-    }
-    
-    
-    .article-description p
-    {
-     text-decoration: none;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*Populaire*/ 
-    
-    aside 
-    {
+#logement 
+{
+display: flex;    
 
-      position: relative;
-    display: none;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    padding: 40px;
-    border-radius: 30px;
-    width: 30%;
-     justify-content: space-around;
-    
-    
-    }
-    
-    .card-populaire img 
-    {
-    width: 250px;
-    height: 230px;
-     border-radius: 25px 0px 0px 25px;
-    }
-    
-    .card-populaire a
-    {
-    display: flex;
-    text-decoration: none;
-    }
-    
-    .card-populaire 
-    {
-    border: 2px white solid;
-    background-color: white;
-    border-radius: 30px;
-    box-shadow: black;
-    padding: 8px;
-    
-    }
-    
-    .article-description-populaire
-    {
-    margin: 0px 5px 0px 25px;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2em;
-    
-    }
-    
-    
-    
-    .etoile
-    {
-    display: flex;
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: blue;
-    }
-    
-    
-    .gris
-    {
-    color: gray;
-    
-    }
-    
-    
-    
-    
-    aside h2 i 
-    {
-    display: flex;
-    font-size: 1.2em;
-    position: absolute;
-     left: 650px;
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /*footer desktop */
-    
-    footer{
-    display: none;
-    background-color: #E4E3E8;
-     margin-top: 60px;
-     padding: 25px 0px 50px 0px;
-    }
-    
-    #footercontent {
-    display: flex;
-     justify-content: space-between;
-    margin: 0px 250px 0px 35px;
-    
-    }
-    
-    .footerColumn
-    {
-    display: flex;
-    line-height: 30px;
-    font-size: 15px;
-    font-weight: 500;
-    flex-direction: column;
-    }
-    
-    
-    .footerColumn a {
-      text-decoration: none;
-      color: black;
-      font-size: 1.1em;
-    }
-    
-    
-    
-    
-    /*Activité à Marseille */
-    
-    
-    .description-activité
-    {
-     color: black;
-     margin-left: 10px;
-     padding: 3px;
-      
-     
-    
-    }
-    
-    #activityContent 
-    {
-    display: none;
-    justify-content: space-between;
-    margin-top: 30px;
-    
-    
-    
-    }
-    
-    #activityContent a 
-    {
-     text-decoration:  none;
-    }
-    
-    
-    .activityCard{
-      box-shadow: 2px 2px 2px 2px #f2f2f2;
-      border-radius: 20px;
-    }
-    
-    .activityCard img
-    {
-    border-radius: 20px 20px 0px 0px;
-    width: 400px;
-     height: 230px;
-    }
-          
-    
-    .longbloc img
-    {
-    height: 500px;
-    }
-    
-     
-    
-    
-    #ile img {
-      height: 200px;
-    }
-    
-    
-    
-    #notre img 
-    {
-      height: 170px;
-    }
-    
-    
-    .bloc {
-     display: flex;
-     justify-content: space-between;
-     flex-direction: column ;
-    
-    }
+margin-bottom: 20px;
+ font-size: 1.6em;
+ width: 70%;
+   
+}
+
+
+
+#logement li 
+{
+border : 2px solid #F2F2F2;
+list-style-type: none;
+border-radius: 30px;
+padding: 5px 10px ;
+color: #0065FC ;
+}
+
+
+
+#logement h2{ 
+font-size: 1.1em;
+color: gray;
+}
+
+/*Hébergement */
+
+
+#contenu 
+{
+order: 2;
+border-radius: 30px;
+width: 100%;
+background-color: white;
+align-items: center;
+
+}
+
+#contenu h2 {
+  font-size: 2em;
+}
+
+#contenugénéral 
+{
+flex-direction: column;
+width: 100%;
+
+}
+
+#affichez a
+{
+ color: black;
+ text-decoration: none;
+ font-weight: bold;
+  display: none;
+ 
   
 }
+
+
+
+#content {
+
+  display: flex;
+flex-wrap: wrap;
+align-items: center;
+margin: 0;
+
+}
+
+
+
+
+.price 
+{
+font-weight: bold;
+}
+
+
+
+
+.card {
+  display: flex;
+ border: 2px white solid;
+ background-color: white;
+ border-radius: 30px;
+ margin-top: 50px;
+ box-shadow: 2px 2px 2px 2px #f2f2f2;
+
+ 
+ 
+}
+.card img {
+width: 610px;
+height: 250px;
+ border-radius: 20px 20px 0px 0px;
+}
+
+
+
+
+.card a {
+list-style-type: none; 
+text-decoration: none;
+color: black;
+font-size: 0.9em;
+}
+
+
+
+
+.article-description
+{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+line-height: 5px;
+font-size: 1.2em;
+flex-wrap: wrap;
+
+}
+
+
+.article-description p
+{
+ text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*Populaire*/ 
+
+aside 
+{
+  order: 1;
+flex-direction: column;
+background-color: #F2F2F2;
+border-radius: 0%;
+width: 100%;
+
+ 
+
+
+}
+
+.card-populaire img 
+{
+width: 200px;
+height: 200px;
+ border-radius: 25px 0px 0px 25px;
+}
+
+.card-populaire a
+{
+display: flex;
+text-decoration: none;
+
+}
+
+.card-populaire 
+{
+border: 2px white solid;
+background-color: white;
+border-radius: 30px;
+box-shadow: black;
+margin-bottom: 15px;
+
+
+}
+
+.article-description-populaire
+{
+margin: 0px 5px 0px 25px;
+color: black;
+display: flex;
+flex-direction: column;
+font-size: 1.2em;
+
+}
+
+
+
+.etoile
+{
+display: flex;
+margin-top: 20px;
+font-size: 0.8em;
+color: blue;
+}
+
+
+.gris
+{
+color: gray;
+
+}
+
+
+
+
+aside h2 i 
+{
+display: flex;
+font-size: 1.2em;
+position: absolute;
+ left: 550px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*footer desktop */
+
+footer{
+ 
+ background-color: #E4E3E8;
+ margin-top: 60px;
+ padding: 25px 0px 50px 0px;
+}
+
+#footercontent {
+ flex-direction: column;
+ justify-content: space-between;
+margin: 0px 250px 0px 35px;
+
+}
+
+.footerColumn
+{
+display: flex;
+line-height: 30px;
+font-size: 15px;
+font-weight: 500;
+flex-direction: column;
+}
+
+
+.footerColumn a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+
+
+
+
+/*Activité à Marseille */
+
+
+.description-activité
+{
+ color: black;
+ margin-left: 10px;
+ padding: 3px;
+  
+ 
+
+}
+
+#activityContent 
+{
+flex-direction: column;
+margin-top: 30px;
+align-items: center;
+
+
+
+}
+
+#activityContent a 
+{
+ text-decoration:  none;
+}
+
+
+.activityCard{
+  box-shadow: 2px 2px 2px 2px #f2f2f2;
+  border-radius: 20px;
+  margin-top: 40px;
+ 
+  
+}
+
+.activityCard img
+{
+border-radius: 20px 20px 0px 0px;
+width: 600px;
+ 
+}
+      
+
+.longbloc img
+{
+height: 250px;
+}
+
+ 
+
+
+#ile img {
+  height: 200px;
+}
+
+
+
+#notre img 
+{
+  height: 170px;
+}
+
+
+.bloc {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column ;
+
+}
+
+}
+    
+    }
+    
+    
+    
+  
