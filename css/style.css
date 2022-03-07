@@ -359,8 +359,8 @@ font-family: 'Raleway', sans-serif;
 
 body {
 padding: 30px 30px;
-
 font-family: "Raleway", "Sans serif";
+margin: 0;
 }
 
 
@@ -400,11 +400,16 @@ color: black;
 color:#0065FC;
 border-top: 4px solid #0065FC;
 padding-top: 73px;
+transition: ease 0.1s;
 
 
 }
-
-
+ header
+{ 
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
 
 
 .titre h1 
@@ -464,17 +469,13 @@ outline: none;
 cursor: pointer;
 background-color: #0065FC ;
 color: white;
-
-
-
-
-
-
-
-
-
 }
 
+.box input[type="submit"]:hover
+{
+  background-color: #003c96;
+  transition: ease 0.3s;
+}
 
 
 #localisation span {
@@ -585,7 +586,12 @@ color: gray;
 }
 
 /*Hébergement */
-
+main
+{
+  width: 98%;
+  max-width: 1440px;
+  margin: auto;
+}
 
 #contenu 
 {
@@ -604,14 +610,22 @@ justify-content: space-between;
 
 }
 
+#affichez
+{
+  margin: 40px 0px 0px 0px;
+}
+
 #affichez a
 {
- color: black;
- text-decoration: none;
- font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4em;
+}
 
- 
-  
+#affichez a:hover{
+  background-color: gray;
+  transition: ease 0.3s;
 }
 
 
@@ -643,8 +657,10 @@ font-weight: bold;
  border-radius: 30px;
  margin-top: 50px;
  padding: 8px;
- 
- 
+}
+.card:hover {
+ background-color: gray;
+  transition: ease 0.3s;
 }
 .card img {
 width: 400px;
@@ -669,8 +685,7 @@ font-size: 0.9em;
 {
 padding: 0px 0px 10px 15px;
 display: flex;
-flex-direction: column;
-align-items: flex-start;
+flex-direction: column; 
 line-height: 5px;
 font-size: 1.2em;
 flex-wrap: wrap;
@@ -683,27 +698,19 @@ flex-wrap: wrap;
  text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
 /*Populaire*/ 
 
 aside 
 {
   position: relative;
-display: flex;
-flex-direction: column;
-background-color: #F2F2F2;
-padding: 40px;
-border-radius: 30px;
-width: 30%;
+ display: flex;
+ flex-direction: column;
+ background-color: #F2F2F2;
+ padding: 40px;
+ border-radius: 30px;
+ width: 30%;
  justify-content: space-around;
+ flex-wrap: wrap;
 
 
 }
@@ -728,7 +735,12 @@ background-color: white;
 border-radius: 30px;
 box-shadow: black;
 padding: 8px;
+}
 
+.card-populaire:hover
+{
+  background-color: gray;
+  transition: ease 0.3s;
 }
 
 .article-description-populaire
@@ -738,6 +750,7 @@ color: black;
 display: flex;
 flex-direction: column;
 font-size: 1.2em;
+ justify-content: space-around;
 
 }
 
@@ -776,15 +789,6 @@ aside h2
   padding: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 /*footer desktop */
 
 footer{
@@ -817,10 +821,17 @@ flex-direction: column;
   font-size: 1.1em;
 }
 
+.footerColumn a:hover
+{
+  background-color:  gray;
+  transition: ease 0.3s;
+}
+
 
 
 
 /*Activité à Marseille */
+
 
 
 .description-activité
@@ -852,6 +863,11 @@ margin-top: 30px;
 .activityCard{
   box-shadow: 2px 2px 2px 2px #f2f2f2;
   border-radius: 20px;
+}
+
+.activityCard:hover{
+  background-color: gray;
+  transition: ease 0.3s;
 }
 
 .activityCard img
@@ -920,13 +936,17 @@ height: 500px;
     {
     text-decoration: none;
     list-style-type: none;
+     
     
     }
     
     
     #presentation nav ul li {
     font-size: 1.8em; 
-    margin-right: 150px;
+     padding: 0;
+     margin-right: 150px;
+     
+
     }
     
     #presentation nav ul li a
@@ -1133,8 +1153,6 @@ width: 100%;
  text-decoration: none;
  font-weight: bold;
   display: none;
- 
-  
 }
 
 
@@ -1230,6 +1248,8 @@ width: 100%;
 
 
 }
+
+
 
 .card-populaire img 
 {
@@ -1333,7 +1353,12 @@ flex-direction: column;
 .footerColumn a {
   text-decoration: none;
   color: black;
-  font-size: 1.1em;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.footertitre {
+  font-size: 1.8em;
 }
 
 
@@ -1376,35 +1401,35 @@ align-items: center;
   
 }
 
-.activityCard img
-{
+ .activityCard img
+ {
 border-radius: 20px 20px 0px 0px;
 width: 600px;
  
-}
+ }
       
 
-.longbloc img
-{
+ .longbloc img
+ {
 height: 250px;
-}
+ }
 
  
 
 
-#ile img {
+ #ile img {
   height: 200px;
-}
+ }
 
 
 
-#notre img 
-{
+ #notre img 
+ {
   height: 170px;
 }
 
 
-.bloc {
+ .bloc {
  display: flex;
  justify-content: space-between;
  flex-direction: column ;
@@ -1413,8 +1438,12 @@ height: 250px;
 
 }
     
-    }
+
+  
+
+  
+
     
-    
+
     
   
