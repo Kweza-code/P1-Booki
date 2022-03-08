@@ -359,8 +359,8 @@ font-family: 'Raleway', sans-serif;
 
 body {
 padding: 30px 30px;
+
 font-family: "Raleway", "Sans serif";
-margin: 0;
 }
 
 
@@ -404,12 +404,8 @@ transition: ease 0.1s;
 
 
 }
- header
-{ 
-  width: 98%;
-  max-width: 1440px;
-  margin: auto;
-}
+
+
 
 
 .titre h1 
@@ -586,12 +582,7 @@ color: gray;
 }
 
 /*Hébergement */
-main
-{
-  width: 98%;
-  max-width: 1440px;
-  margin: auto;
-}
+
 
 #contenu 
 {
@@ -907,12 +898,12 @@ height: 500px;
 
 /*media screen pour tablette */
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 320px)
 {
   body {
     font-family: "Raleway", "Sans serif";
-      padding: 0;
-  
+     padding: 0;
+
     }
     
     
@@ -920,8 +911,7 @@ height: 500px;
 
      flex-direction:column;
      align-items:center;
-     
-   
+    
     }
     
     #presentation img {
@@ -942,9 +932,9 @@ height: 500px;
     
     
     #presentation nav ul li {
-    font-size: 1.8em; 
+    font-size: 1.2em; 
      padding: 0;
-     margin-right: 150px;
+     margin-right: 40px;
      
 
     }
@@ -966,15 +956,16 @@ height: 500px;
     
     
      .titre{
-       margin: 0px 0px 0px 40px;
+       margin:0;
+       
      }
     
     .titre h1 
     {
     
-    font-size: 2.5em;
+    font-size: 1.2em;
     padding-top: 15px;
-    width: 80%;
+    width: 100%;
      
   
     }
@@ -982,7 +973,7 @@ height: 500px;
     .titre p{
     
     padding-bottom: 15px;
-    font-size: 1.8em;
+    font-size: 0.9em;
      
       
     }
@@ -993,7 +984,7 @@ height: 500px;
     box-sizing: border-box;
     align-items: baseline;
     margin-bottom: 40px;
-     padding: 20px;
+  
     }
     
     
@@ -1003,8 +994,8 @@ height: 500px;
     {
     
     outline: none;
-     padding: 25px;
-    font-size: 1.8em;
+     padding: 10px;
+    font-size: 1em;
     border: 1px solid #F2F2F2;
      font-weight: bold;
      color: black;
@@ -1018,8 +1009,8 @@ height: 500px;
     .box input[type="submit"]
     {
     border-radius: 0 20px 20px 0;
-    padding: 25px;
-    font-size: 1.5em;
+    padding: 10px;
+    font-size: 1em;
     border: none;
     outline: none;
     cursor: pointer;
@@ -1034,8 +1025,8 @@ height: 500px;
     text-decoration: none;
     border-radius: 20px 0 0 20px;
     border: 1px solid  #E4E3E8;
-    font-size: 1.5em;
-    padding: 28px;
+    font-size: 1em;
+    padding: 10px;
     background-color:#F2F2F2;
     flex-direction: column;
     }
@@ -1051,7 +1042,7 @@ height: 500px;
    
 #filtres ul {
   flex-wrap: wrap;
- 
+  
 } 
 
 
@@ -1064,9 +1055,6 @@ flex-basis: auto;
  color: #0065FC;
  cursor: pointer ;
  margin-bottom: 30px;
- 
- 
-
  
 }
 
@@ -1082,28 +1070,27 @@ flex-basis: auto;
 #filtres li i {
 background-color: #DEEBFF;
 border-radius: 20px;
-padding: 15px;
+padding: 10px;
 }
 
 #filtres span
 {
-
 color: black;
 font-weight: bold;
-padding: 15px;
-font-size: 1.2em;
+padding: 20px;
+font-size: 1em;
 }
  
    
 #logement 
 {
 display: flex;    
-
 margin-bottom: 20px;
- font-size: 1.6em;
- width: 70%;
+ font-size: 1em;
+
    
 }
+
 
 
 
@@ -1142,8 +1129,9 @@ align-items: center;
 
 #contenugénéral 
 {
+  display: flex;
 flex-direction: column;
-width: 100%;
+
 
 }
 
@@ -1189,8 +1177,8 @@ font-weight: bold;
  
 }
 .card img {
-width: 610px;
-height: 250px;
+width: 100px;
+height: 200px;
  border-radius: 20px 20px 0px 0px;
 }
 
@@ -1243,19 +1231,16 @@ flex-direction: column;
 background-color: #F2F2F2;
 border-radius: 0%;
 width: 100%;
-
- 
-
-
 }
 
 
 
 .card-populaire img 
 {
-width: 200px;
+width: 100px;
 height: 200px;
  border-radius: 25px 0px 0px 25px;
+ 
 }
 
 .card-populaire a
@@ -1272,6 +1257,7 @@ background-color: white;
 border-radius: 30px;
 box-shadow: black;
 margin-bottom: 15px;
+padding: 0;
 
 
 }
@@ -1282,7 +1268,7 @@ margin: 0px 5px 0px 25px;
 color: black;
 display: flex;
 flex-direction: column;
-font-size: 1.2em;
+font-size: 0.8em;
 
 }
 
@@ -1304,15 +1290,17 @@ color: gray;
 }
 
 
-
+aside h2 
+{
+  font-size: 1em
+}
 
 aside h2 i 
 {
-display: flex;
+display: none;
 font-size: 1.2em;
 position: absolute;
  left: 550px;
-
 }
 
 
@@ -1379,6 +1367,7 @@ flex-direction: column;
 
 #activityContent 
 {
+  display: none;
 flex-direction: column;
 margin-top: 30px;
 align-items: center;
@@ -1401,35 +1390,35 @@ align-items: center;
   
 }
 
- .activityCard img
- {
+.activityCard img
+{
 border-radius: 20px 20px 0px 0px;
 width: 600px;
  
- }
+}
       
 
- .longbloc img
- {
+.longbloc img
+{
 height: 250px;
- }
+}
 
  
 
 
- #ile img {
+#ile img {
   height: 200px;
- }
+}
 
 
 
- #notre img 
- {
+#notre img 
+{
   height: 170px;
 }
 
 
- .bloc {
+.bloc {
  display: flex;
  justify-content: space-between;
  flex-direction: column ;
@@ -1438,12 +1427,8 @@ height: 250px;
 
 }
     
-
-  
-
-  
-
+    }
     
-
+    
     
   
