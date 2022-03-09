@@ -358,30 +358,31 @@ font-family: 'Raleway', sans-serif;
 
 
 body {
-padding: 30px 30px;
+padding:  0px 30px 0px 30px;
+}
 
-font-family: "Raleway", "Sans serif";
+
+
+
+
+#booki img {
+ height: 50px;
+margin-top: 10px;
 }
 
 
 #presentation {
-display: flex;
+  display: flex;
 justify-content: space-between;
 }
-
-#presentation img {
- margin-top: 20px;
- height: 50px;
-
- 
-}
-
 
 #presentation nav ul
 {
 display: flex;
 text-decoration: none;
 list-style-type: none;
+
+ 
 }
 
 
@@ -510,6 +511,7 @@ font-size: 1.3em;
 
 #filtres ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -593,12 +595,12 @@ width: 68%;
 
 }
 
+
+
 #contenugénéral 
 {
 display: flex;
 justify-content: space-between;
- margin: auto;
-
 }
 
 #affichez
@@ -625,12 +627,6 @@ justify-content: space-between;
   display: flex;
 flex-wrap: wrap;
 justify-content:  space-between;
-
-
-
-   
-
-
 }
 
 .price 
@@ -641,28 +637,29 @@ font-weight: bold;
 
 
 
-.card {
-  
+article.card {
+ width: 33%;
  border: 2px white solid;
  background-color: white;
  border-radius: 30px;
- margin-top: 50px;
  padding: 8px;
+ 
 }
-.card:hover {
+article.card:hover {
  background-color: gray;
   transition: ease 0.3s;
 }
-.card img {
-width: 400px;
-height: 200px;
+article.card img {
+width: 100%;
  border-radius: 20px 20px 0px 0px;
+ height: 200px;
+ 
 }
 
 
 
 
-.card a {
+article.card a {
 list-style-type: none; 
 text-decoration: none;
 color: black;
@@ -670,18 +667,6 @@ font-size: 0.9em;
 }
 
 
-
-
-.article-description
-{
-padding: 0px 0px 10px 15px;
-display: flex;
-flex-direction: column; 
-line-height: 5px;
-font-size: 1.2em;
-flex-wrap: wrap;
-
-}
 
 
 .article-description p
@@ -693,57 +678,51 @@ flex-wrap: wrap;
 
 aside 
 {
-  position: relative;
- display: flex;
- flex-direction: column;
  background-color: #F2F2F2;
- padding: 40px;
  border-radius: 30px;
  width: 30%;
- justify-content: space-around;
  flex-wrap: wrap;
 
-
+ 
 }
 
-.card-populaire img 
-{
-width: 250px;
-height: 230px;
- border-radius: 25px 0px 0px 25px;
+
+
+ aside article.card 
+ {
+   display: flex;
+   width: 90%;
+   margin-top: 20px;
+   
+  
+ }
+
+ aside article.card a
+ {
+   display: flex;
+
+
+ }
+
+aside .card img {
+  width: 70%;
+  border-radius: 20px 0px 0px 20px;
 }
 
-.card-populaire a
-{
-display: flex;
-text-decoration: none;
+aside article.card a .article-description{
+  margin-left: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
 }
 
-.card-populaire 
-{
-border: 2px white solid;
-background-color: white;
-border-radius: 30px;
-box-shadow: black;
-padding: 8px;
+#contentaside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
-.card-populaire:hover
-{
-  background-color: gray;
-  transition: ease 0.3s;
-}
-
-.article-description-populaire
-{
-margin: 0px 5px 0px 25px;
-color: black;
-display: flex;
-flex-direction: column;
-font-size: 1.2em;
- justify-content: space-around;
-
-}
 
 
 
@@ -752,31 +731,23 @@ font-size: 1.2em;
 display: flex;
 margin-top: 20px;
 font-size: 0.8em;
-color: blue;
+color: #0065FC;
 }
 
 
 .gris
 {
-color: gray;
+color: #F2F2F2;
 
 }
 
 
 
 
-aside h2 i 
-{
-display: flex;
-font-size: 1.2em;
-position: absolute;
- left: 650px;
-
-}
 
 aside h2 
 {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 20px;
 }
 
@@ -784,7 +755,7 @@ aside h2
 
 footer{
 
-background-color: #E4E3E8;
+background-color: #F2F2F2;
  margin-top: 60px;
  padding: 25px 0px 50px 0px;
 }
@@ -825,610 +796,90 @@ flex-direction: column;
 
 
 
-.description-activité
+
+#activityContent
 {
- color: black;
- margin-left: 10px;
- padding: 3px;
-  
- 
+  display: flex;
+  justify-content:space-between;
+}
+
+#activityContent article.card {
+  width: 100%;
+  border: 2px white solid;
+  background-color: white;
+  border-radius: 30px;
 
 }
 
-#activityContent 
+#fort img
 {
-display: flex;
-justify-content: space-between;
-margin-top: 30px;
-
-
-
+  height: 250px;
 }
 
-#activityContent a 
-{
- text-decoration:  none;
-}
-
-
-.activityCard{
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  border-radius: 20px;
-}
-
-.activityCard:hover{
-  background-color: gray;
-  transition: ease 0.3s;
-}
-
-.activityCard img
-{
-border-radius: 20px 20px 0px 0px;
-width: 400px;
- height: 230px;
-}
-      
-
-.longbloc img
-{
-height: 500px;
-}
-
- 
-
-
-#ile img {
-  height: 200px;
+#vieuxport article.card a img {
+  height: 1000px;
 }
 
 
 
-#notre img 
-{
-  height: 170px;
-}
+/*media screen pour mobile */
 
-
-.bloc {
- display: flex;
- justify-content: space-between;
- flex-direction: column ;
-
-}
-
-/*media screen pour tablette */
-
-@media screen and (max-width: 320px)
-{
-  body {
-    font-family: "Raleway", "Sans serif";
+@media screen  and (max-width: 767px)
+  {
+   
+    body{
      padding: 0;
+    }
 
+    header{
+      padding: 0px 30px 0px 30px ;
     }
-    
-    
-    #presentation {
-
-     flex-direction:column;
-     align-items:center;
-    
-    }
-    
-    #presentation img {
-     margin-top: 20px;
-     width: 135px;
-    
-     
-    }
-    
-    
-    #presentation nav ul
-    {
-    text-decoration: none;
-    list-style-type: none;
-     
-    
-    }
-    
-    
-    #presentation nav ul li {
-    font-size: 1.2em; 
-     padding: 0;
-     margin-right: 40px;
-     
-
-    }
-    
-    #presentation nav ul li a
-    {
-    text-decoration: none;
-    color: black;
-    
-    }
-    #presentation nav a:hover {
-    color:#0065FC;
-    border-bottom: 4px solid #0065FC;
-    border-top: white;
-    padding-bottom: 20px;
-    
-    
-    }
-    
-    
-     .titre{
-       margin:0;
+      #presentation 
+      {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       flex-wrap: initial;
+      }
        
-     }
+
+
     
-    .titre h1 
-    {
-    
-    font-size: 1.2em;
-    padding-top: 15px;
-    width: 100%;
-     
-  
-    }
-    
-    .titre p{
-    
-    padding-bottom: 15px;
-    font-size: 0.9em;
-     
+      .titre{
+        width: 50%;
+        align-items: center;
+      }
+
+      .titre h1 {
+        font-size: 1.5em;
+      }
+
+      #filtres li {
+        margin-top: 20px;
+      }
+
+
+      #contenugénéral{
+        display: grid;
+
       
-    }
-    
-    .box {
-    
-    display: flex;
-    box-sizing: border-box;
-    align-items: baseline;
-    margin-bottom: 40px;
-  
-    }
-    
-    
-    
-    
-    .box input[type="search"]
-    {
-    
-    outline: none;
-     padding: 10px;
-    font-size: 1em;
-    border: 1px solid #F2F2F2;
-     font-weight: bold;
-     color: black;
-     padding-left: 30px;
-    
-    
-    
-    }
-    
-    
-    .box input[type="submit"]
-    {
-    border-radius: 0 20px 20px 0;
-    padding: 10px;
-    font-size: 1em;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #0065FC ;
-    color: white;
-    }
-    
-    
-    
-    #localisation span {
-    color: black;
-    text-decoration: none;
-    border-radius: 20px 0 0 20px;
-    border: 1px solid  #E4E3E8;
-    font-size: 1em;
-    padding: 10px;
-    background-color:#F2F2F2;
-    flex-direction: column;
-    }
-    
-    
-    
-    
-    #filtres {   
-     flex-direction: column;
-    
-    }
-    
-   
-#filtres ul {
-  flex-wrap: wrap;
-  
-} 
+      }
 
+      #contenu
+      {
+        order: 2;
+        background-color: white;
+      }
 
+      aside{
+        order: 1;
+        width: 100%;
+      }
+  }
 
-#filtres li  {
- list-style-type: none;
-flex-basis: auto;
- border: 3px solid #F2F2F2;
- border-radius: 40px;
- color: #0065FC;
- cursor: pointer ;
- margin-bottom: 30px;
- 
-}
 
 
-#filtres li:hover 
-{
- background-color: #DEEBFF;
-}
 
-
-
-
-#filtres li i {
-background-color: #DEEBFF;
-border-radius: 20px;
-padding: 10px;
-}
-
-#filtres span
-{
-color: black;
-font-weight: bold;
-padding: 20px;
-font-size: 1em;
-}
- 
-   
-#logement 
-{
-display: flex;    
-margin-bottom: 20px;
- font-size: 1em;
-
-   
-}
-
-
-
-
-#logement li 
-{
-border : 2px solid #F2F2F2;
-list-style-type: none;
-border-radius: 30px;
-padding: 5px 10px ;
-color: #0065FC ;
-}
-
-
-
-#logement h2{ 
-font-size: 1.1em;
-color: gray;
-}
-
-/*Hébergement */
-
-
-#contenu 
-{
-order: 2;
-border-radius: 30px;
-width: 100%;
-background-color: white;
-align-items: center;
-
-}
-
-#contenu h2 {
-  font-size: 2em;
-}
-
-#contenugénéral 
-{
-  display: flex;
-flex-direction: column;
-
-
-}
-
-#affichez a
-{
- color: black;
- text-decoration: none;
- font-weight: bold;
-  display: none;
-}
-
-
-
-#content {
-
-  display: flex;
-flex-wrap: wrap;
-align-items: center;
-margin: 0;
-
-}
-
-
-
-
-.price 
-{
-font-weight: bold;
-}
-
-
-
-
-.card {
-  display: flex;
- border: 2px white solid;
- background-color: white;
- border-radius: 30px;
- margin-top: 50px;
- box-shadow: 2px 2px 2px 2px #f2f2f2;
-
- 
- 
-}
-.card img {
-width: 100px;
-height: 200px;
- border-radius: 20px 20px 0px 0px;
-}
-
-
-
-
-.card a {
-list-style-type: none; 
-text-decoration: none;
-color: black;
-font-size: 0.9em;
-}
-
-
-
-
-.article-description
-{
-
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-line-height: 5px;
-font-size: 1.2em;
-flex-wrap: wrap;
-
-}
-
-
-.article-description p
-{
- text-decoration: none;
-}
-
-
-
-
-
-
-
-
-
-
-/*Populaire*/ 
-
-aside 
-{
-  order: 1;
-flex-direction: column;
-background-color: #F2F2F2;
-border-radius: 0%;
-width: 100%;
-}
-
-
-
-.card-populaire img 
-{
-width: 100px;
-height: 200px;
- border-radius: 25px 0px 0px 25px;
- 
-}
-
-.card-populaire a
-{
-display: flex;
-text-decoration: none;
-
-}
-
-.card-populaire 
-{
-border: 2px white solid;
-background-color: white;
-border-radius: 30px;
-box-shadow: black;
-margin-bottom: 15px;
-padding: 0;
-
-
-}
-
-.article-description-populaire
-{
-margin: 0px 5px 0px 25px;
-color: black;
-display: flex;
-flex-direction: column;
-font-size: 0.8em;
-
-}
-
-
-
-.etoile
-{
-display: flex;
-margin-top: 20px;
-font-size: 0.8em;
-color: blue;
-}
-
-
-.gris
-{
-color: gray;
-
-}
-
-
-aside h2 
-{
-  font-size: 1em
-}
-
-aside h2 i 
-{
-display: none;
-font-size: 1.2em;
-position: absolute;
- left: 550px;
-}
-
-
-
-
-
-
-
-
-
-
-/*footer desktop */
-
-footer{
- 
- background-color: #E4E3E8;
- margin-top: 60px;
- padding: 25px 0px 50px 0px;
-}
-
-#footercontent {
- flex-direction: column;
- justify-content: space-between;
-margin: 0px 250px 0px 35px;
-
-}
-
-.footerColumn
-{
-display: flex;
-line-height: 30px;
-font-size: 15px;
-font-weight: 500;
-flex-direction: column;
-}
-
-
-.footerColumn a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.4em;
-  margin-top: 10px;
-}
-
-.footertitre {
-  font-size: 1.8em;
-}
-
-
-
-
-/*Activité à Marseille */
-
-
-.description-activité
-{
- color: black;
- margin-left: 10px;
- padding: 3px;
-  
- 
-
-}
-
-#activityContent 
-{
-  display: none;
-flex-direction: column;
-margin-top: 30px;
-align-items: center;
-
-
-
-}
-
-#activityContent a 
-{
- text-decoration:  none;
-}
-
-
-.activityCard{
-  box-shadow: 2px 2px 2px 2px #f2f2f2;
-  border-radius: 20px;
-  margin-top: 40px;
- 
-  
-}
-
-.activityCard img
-{
-border-radius: 20px 20px 0px 0px;
-width: 600px;
- 
-}
-      
-
-.longbloc img
-{
-height: 250px;
-}
-
- 
-
-
-#ile img {
-  height: 200px;
-}
-
-
-
-#notre img 
-{
-  height: 170px;
-}
-
-
-.bloc {
- display: flex;
- justify-content: space-between;
- flex-direction: column ;
-
-}
-
-}
-    
-    }
-    
     
     
   
