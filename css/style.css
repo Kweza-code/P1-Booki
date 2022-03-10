@@ -357,8 +357,13 @@ font-family: 'Raleway', sans-serif;
 }
 
 
-body {
-padding:  0px 30px 0px 30px;
+
+header{
+  padding: 0px 30px 0px 30px;
+}
+
+main{
+  padding: 0px 30px 0px 30px;
 }
 
 
@@ -400,7 +405,7 @@ color: black;
 #presentation nav a:hover {
 color:#0065FC;
 border-top: 4px solid #0065FC;
-padding-top: 73px;
+padding-top: 40px;
 transition: ease 0.1s;
 
 
@@ -432,7 +437,6 @@ display: flex;
 box-sizing: border-box;
 align-items: baseline;
 margin-bottom: 40px;
-
 }
 
 
@@ -440,32 +444,27 @@ margin-bottom: 40px;
 
 .box input[type="search"]
 {
-
 outline: none;
- padding: 17px;
 font-size: 1.4em;
 border: 1px solid #F2F2F2;
- font-weight: bold;
- color: black;
- padding-left: 30px;
-
-
-
+font-weight: bold;
+color: black;
+height: 62px;
+vertical-align: middle;
 }
 
 
 .box input[type="submit"]
 {
-
-
 border-radius: 0 20px 20px 0;
-padding: 17px;
 font-size: 1.3em;
 border: none;
 outline: none;
 cursor: pointer;
 background-color: #0065FC ;
 color: white;
+height: 62px;
+vertical-align: middle;
 }
 
 .box input[type="submit"]:hover
@@ -476,8 +475,8 @@ color: white;
 
 
 #localisation span {
-
-
+display: inline-block;
+vertical-align: middle;
 color: black;
 text-decoration: none;
 border-radius: 20px 0 0 20px;
@@ -486,14 +485,9 @@ font-size: 1.1em;
 padding: 20px;
 background-color:#F2F2F2;
 flex-direction: column;
-
-
-
-
-
-
-
 }
+
+
 
 
 
@@ -523,8 +517,6 @@ margin-right: 70px;
  border-radius: 40px;
  color: #0065FC;
  cursor: pointer ;
- 
-
  
 }
 
@@ -583,13 +575,15 @@ font-size: 1.2em;
 color: gray;
 }
 
-/*Hébergement */
+
+
+/*Main */
 
 
 #contenu 
 {
 background-color: #F2F2F2;
-padding: 60px;
+padding: 30px;
 border-radius: 30px;
 width: 68%;
 
@@ -601,6 +595,7 @@ width: 68%;
 {
 display: flex;
 justify-content: space-between;
+
 }
 
 #affichez
@@ -627,6 +622,7 @@ justify-content: space-between;
   display: flex;
 flex-wrap: wrap;
 justify-content:  space-between;
+padding: 20px;
 }
 
 .price 
@@ -643,6 +639,8 @@ article.card {
  background-color: white;
  border-radius: 30px;
  padding: 8px;
+ flex-wrap: wrap;
+ margin-top: 20px;
  
 }
 article.card:hover {
@@ -652,7 +650,8 @@ article.card:hover {
 article.card img {
 width: 100%;
  border-radius: 20px 20px 0px 0px;
- height: 200px;
+ height: 150px;
+ flex-wrap: wrap;
  
 }
 
@@ -664,6 +663,7 @@ list-style-type: none;
 text-decoration: none;
 color: black;
 font-size: 0.9em;
+
 }
 
 
@@ -674,7 +674,7 @@ font-size: 0.9em;
  text-decoration: none;
 }
 
-/*Populaire*/ 
+
 
 aside 
 {
@@ -682,8 +682,7 @@ aside
  border-radius: 30px;
  width: 30%;
  flex-wrap: wrap;
-
- 
+ padding: 20px;
 }
 
 
@@ -693,27 +692,27 @@ aside
    display: flex;
    width: 90%;
    margin-top: 20px;
-   
-  
+   flex-wrap: wrap;
  }
 
  aside article.card a
  {
    display: flex;
-
-
  }
 
 aside .card img {
-  width: 70%;
+  width: 100%;
   border-radius: 20px 0px 0px 20px;
+  height: 200px;
 }
 
 aside article.card a .article-description{
   margin-left: 20px;
   flex-direction: column;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
 }
 
 #contentaside{
@@ -750,6 +749,37 @@ aside h2
   font-size: 1.5em;
   padding: 20px;
 }
+
+
+
+
+#activityContent
+{
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+.longbloc{
+ 
+  border: 2px white solid;
+  background-color: white;
+  border-radius: 30px;
+  width: 95%
+}
+
+.bloc {
+  border: 2px white solid;
+  background-color: white;
+  border-radius: 30px;
+  width: 95%
+}
+
+#activityContent  article.card img {
+
+
+
+}
+
 
 /*footer desktop */
 
@@ -791,45 +821,22 @@ flex-direction: column;
 
 
 
-
-/*Activité à Marseille */
-
-
-
-
-#activityContent
-{
-  display: flex;
-  justify-content:space-between;
-}
-
-#activityContent article.card {
-  width: 100%;
-  border: 2px white solid;
-  background-color: white;
-  border-radius: 30px;
-
-}
-
-#fort img
-{
-  height: 250px;
-}
-
-#vieuxport article.card a img {
-  height: 1000px;
-}
-
-
-
 /*media screen pour mobile */
 
 @media screen  and (max-width: 767px)
   {
-   
-    body{
-     padding: 0;
+
+    body
+    {
+      
     }
+   
+    main {
+      padding: 0;
+    
+    }
+     
+     /*header mobile */
 
     header{
       padding: 0px 30px 0px 30px ;
@@ -842,10 +849,13 @@ flex-direction: column;
        align-items: center;
        flex-wrap: initial;
       }
+
+      .box
+      {
+        width: 80%;
+      }
        
 
-
-    
       .titre{
         width: 50%;
         align-items: center;
@@ -857,8 +867,27 @@ flex-direction: column;
 
       #filtres li {
         margin-top: 20px;
+        padding-top: 0;
+        
       }
 
+      #presentation nav a 
+      {
+        border-bottom: 4px solid gray;
+        padding-bottom: 35px;
+      }
+
+      #presentation nav a:hover {
+        color:#0065FC;
+        border-bottom: 4px solid #0065FC;
+        border-top: 0;
+        padding-bottom: 35px;
+        transition: ease 0.1s;
+        
+        
+        }
+       
+       /*Main mobile */
 
       #contenugénéral{
         display: grid;
@@ -872,51 +901,87 @@ flex-direction: column;
         background-color: white;
       }
 
+     
+
       aside{
         order: 1;
         width: 100%;
         border-radius: 0%;
-        
+       display: flex;
+       align-items: center;
       }
     
 
       #contentaside
       {
-        width:  100%;
+        width:  100%;  
       }
+
+      aside article.card img
+      {
+      }
+
+      aside article.card a .article-description { 
+        width: 100%;
+        flex-wrap: wrap;
+        }
 
       #content 
       {
         display: flex;
         flex-direction: column;
+        
        
       }
       article.card
       {
         width: 100%; 
+        box-shadow: 2px 2px 2px 2px #f2f2f2;
+        margin-top: 30px;
       }
+
 
       #contenu
       {
         padding: 0;
         width: 100%;
       }
+      #contenu h2
+      {
+        padding: 58px 0px 2px 54px;
+      }
+
+      #affichez a {
+        padding: 58px 0px 2px 54px;
+        }
 
       #activityContent
       {
         flex-direction: column;
+        align-items: center;
       }
 
       #activityContent article.card 
       {
         margin-top: 20px;
+        
       }
+
+    
 
       #footercontent
       {
         display: flex;
         flex-direction: column;
       }
+
+      #titleactivity h2
+      {
+        margin-top: 30px;
+      }
+
+
+     /*media screen pour tablette */
   }
 
 
