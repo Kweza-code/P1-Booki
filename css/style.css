@@ -372,10 +372,6 @@ main img, #am img {
   object-fit: cover;
   }
 
-
-
-
-
 #booki img {
  height: 50px;
 margin-top: 10px;
@@ -704,7 +700,7 @@ aside
 
 
 aside .card img {
-  width: 100%;
+  width: 300px;
   border-radius: 20px 0px 0px 20px;
   height: 200px;
 }
