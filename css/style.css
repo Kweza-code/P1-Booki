@@ -409,7 +409,7 @@ color: black;
 #presentation nav a:hover {
 color:#0065FC;
 border-top: 4px solid #0065FC;
-padding-top: 40px;
+padding-top: 32px;
 transition: ease 0.1s;
 
 
@@ -488,7 +488,7 @@ text-decoration: none;
 border-radius: 20px 0 0 20px;
 border: 1px solid  #E4E3E8;
 font-size: 1.1em;
-padding: 10px;
+padding: 20px;
 background-color:#F2F2F2;
 flex-direction: column;
 }
@@ -880,8 +880,14 @@ flex-direction: column;
 
   aside article.card img
   {
+    width: 50%;
     height: auto;
   }
+
+   aside .article-description 
+    {
+    
+    }
 
 
   #contentaside {
@@ -917,15 +923,22 @@ flex-direction: column;
   #activityContent {
      display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    align-items: center;
+   
  }
 
  #activityContent article.card
  {
   border: 2px white solid;
   border-radius: 30px;
-  width: 100%;
  }
+
+ #activityContent .description-activité
+ {
+   text-align: center;
+ }
+
+ 
 
  
 
@@ -940,7 +953,9 @@ flex-direction: column;
     height: 150px;
   }
   
- 
+  #footercontent{
+    margin: 0px 104px 0px 42px;
+  }
 
 
 }
