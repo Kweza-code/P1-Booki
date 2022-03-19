@@ -398,7 +398,6 @@ list-style-type: none;
 #presentation nav ul li {
 padding: 20px;
 font-size: 1.2em;
-
 }
 
 #presentation nav ul li a
@@ -641,7 +640,6 @@ article.card {
  border-radius: 26px;
  padding: 3px;
  flex-wrap: wrap;
- 
  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
  margin-top: 43px;
 }
@@ -779,7 +777,12 @@ padding: 0px 15px 0px 15px;
 #activityContent article.card 
 {
  width: 100%;
+ border: none;
+ padding: 0;
+ 
 }
+
+
 
 #longblock 
 {
@@ -793,7 +796,7 @@ padding: 0px 15px 0px 15px;
 
 #bloc 
 {
-  width: 24%;
+  width: 22%;
   display: flex;
   flex-direction: column;
  
@@ -803,6 +806,12 @@ padding: 0px 15px 0px 15px;
 {
   width: 100%;
   height: 195px;
+}
+
+#activityContent .description-activité
+{
+  padding: 5px;
+  margin-left: 20px;
 }
 
 /*footer desktop */
@@ -929,18 +938,15 @@ flex-direction: column;
 
  #activityContent article.card
  {
-  border: 2px white solid;
-  border-radius: 30px;
+  border: none;
+  padding: 0;
  }
 
  #activityContent .description-activité
  {
-   text-align: center;
+    padding: 2px;
  }
 
- 
-
- 
 
   #longblock img
   {
@@ -967,75 +973,91 @@ flex-direction: column;
 @media screen  and (max-width: 767px)
   {
 
-    body
-    {
-      
-    }
-   
-    main {
+
+    body {
       padding: 0;
-    
+    }
+    main {
+      padding: 0
     }
      
      /*header mobile */
 
     header{
-      padding: 0px 30px 0px 30px ;
       
+      padding: 0; 
     }
       #presentation 
       {
        display: flex;
        flex-direction: column;
-       align-items: center;
        flex-wrap: initial;
-      }
-
-      .box
-      {
-        width: 80%;
-      }
-
       
+      }
        
 
-      .titre{
-        width: 60%;
-        
+      #presentation nav ul 
+      {
+        margin-bottom: 25px;
+      }
+      
+      #presentation nav ul li {
+       padding: 0px;
+       font-size: 1.2em;
+       width: 50%;
+       text-align: center;
+       border-bottom: 3px solid rgb(242, 242, 242);
+     }
+
+     #presentation nav a 
+     {
+       border-bottom: none;
+       padding-bottom: 0;
+     }
+
+     #presentation nav a:hover {
+       
+        color:none;
+        border-bottom: none;
+        border-top: 0;
+        padding-bottom: 0;
+        transition: none;
+       }
+
+       .titre{
+        font-size: 0.8em;
+        margin-left: 5%;
+       
       }
 
       .titre h1 {
         font-size: 1.5em;
       }
 
+
+      .box
+      {
+        margin-left: 5%;
+      }
+
+      
+     
+       
+      #filtres 
+      {
+        margin-left: 5%;
+        flex-direction: column;
+      }
       #filtres li {
         margin-top: 20px;
         padding-top: 0;
-        
-        
       }
 
-      #filtres nav 
-      {
-     
-      }
-
-      #presentation nav a 
-      {
-        border-bottom: 4px solid gray;
-        padding-bottom: 35px;
-      }
-
-      #presentation nav a:hover {
-        color:#0065FC;
-        border-bottom: 4px solid #0065FC;
-        border-top: 0;
-        padding-bottom: 35px;
-        transition: ease 0.1s;
-        
-        
-        }
-       
+       #logement
+       {
+        margin-left: 5%;
+       }
+  
        /*Main mobile */
 
       #contenugénéral{
@@ -1048,6 +1070,12 @@ flex-direction: column;
       {
         order: 2;
         background-color: white;
+        padding: 0;
+      }
+
+      #contenu h2 
+      {
+       
       }
 
      
@@ -1066,9 +1094,7 @@ flex-direction: column;
         width:  100%;  
       }
 
-      aside article.card img
-      {
-      }
+    
 
       aside article.card a .article-description { 
         width: 100%;
@@ -1117,7 +1143,7 @@ flex-direction: column;
 
       #bloc
       {
-        
+        width: 100%;
       }
 
       #bloc img 
@@ -1130,7 +1156,6 @@ flex-direction: column;
       #longblock
       {
         width: 100%; 
-       
         margin-top: 30px;
       }
       
@@ -1138,7 +1163,6 @@ flex-direction: column;
       {
         width: 100%;
         height: 150px;
-        
       }
 
      
