@@ -987,6 +987,13 @@ flex-direction: column;
       
       padding: 0; 
     }
+
+
+    #booki img 
+    {
+      display: flex;
+      align-content: center;
+    }
       #presentation 
       {
        display: flex;
@@ -1002,7 +1009,7 @@ flex-direction: column;
       }
       
       #presentation nav ul li {
-       padding: 0px;
+     
        font-size: 1.2em;
        width: 50%;
        text-align: center;
@@ -1073,13 +1080,9 @@ flex-direction: column;
         padding: 0;
       }
 
-      #contenu h2 
-      {
-       
-      }
+      
 
      
-
       aside{
         order: 1;
         width: 100%;
@@ -1087,11 +1090,18 @@ flex-direction: column;
        display: flex;
        align-items: center;
       }
+
+      aside h2 
+      {
+        padding: 0;
+        font-size: 1.4em;
+      }
     
 
       #contentaside
       {
         width:  100%;  
+        padding: 0;
       }
 
     
@@ -1113,6 +1123,18 @@ flex-direction: column;
         margin-top: 30px;
       }
 
+      #affichez 
+      {
+        margin: 0;
+        margin-left: 5%;
+        margin-top: 30px;
+        font-size: 0.8em;
+      }
+
+      #affichez a {
+        padding: 0;
+        }
+
 
       #contenu
       {
@@ -1121,12 +1143,12 @@ flex-direction: column;
       }
       #contenu h2
       {
-        padding: 58px 0px 2px 54px;
+        padding:0;
+        margin-left: 5%;
+        font-size: 1.4em;
       }
 
-      #affichez a {
-        padding: 58px 0px 2px 54px;
-        }
+     
 
       #activityContent
       {
@@ -1134,7 +1156,10 @@ flex-direction: column;
         align-items: center;
       }
 
-      #activityContent
+      #titleactivity
+      {
+        margin-left: 5%;
+      }
 
       #activityContent article.card 
       {
@@ -1174,8 +1199,10 @@ flex-direction: column;
         flex-direction: column;
       }
 
-      #titleactivity h2
+      .footerColumn 
       {
-        margin-top: 30px;
+        width: 100%;
       }
+
+     
   }
