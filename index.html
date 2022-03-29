@@ -15,11 +15,11 @@
         <header>
            <div id="presentation">
                <div id="booki">
-                  <img src="images/logo/Booki.png" alt="logo">
+                  <img src="images/logo/Booki@3x.png" alt="Logo Booki">
                </div>
                 <nav>
                     <ul>
-                        <li><a href="#">Hébergements</a></li>
+                        <li><a id="menu" href="#">Hébergements</a></li>
                         <li><a href="#">Activités</a></li>
                     </ul>
                 </nav>
@@ -34,8 +34,9 @@
                     </a></span>
                 </div>
                 <form action="#" method="post">
-                    <input type="search" name="search" placeholder="saisissez votre ville" value="Marseille, France"><input type="submit" name="submit" value="Rechercher"> 
-                </form>               
+                    <input type="search" name="search" placeholder="saisissez votre ville" value="Marseille, France"><button><div id="loop"><i class="fa-solid fa-magnifying-glass"></i></div><span class="search">Recherche</span></button>
+                </form>      
+                     
             </div>
             <div id="filtres">
                 <span>Filtres</span>
@@ -68,7 +69,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="l'auberge">
                                  <div class="article-description">
-                                     <h3>Auverge la Cannebière</h3>
+                                     <h3 class="positiontitre">Auverge la Cannebière</h3>
                                      <p>Nuit à partir de <span class="price">25€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -86,7 +87,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="l'hotel du port">
                                  <div class="article-description">
-                                     <h3>Hôtel du port</h3>
+                                     <h3 class="positiontitre">Hôtel du port</h3>
                                      <p>Nuit à partir de <span class="price">52€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -102,7 +103,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="l'hotel de la mouettes">
                                  <div class="article-description">
-                                     <h3>Hôtel les mouettes</h3>
+                                     <h3 class="positiontitre">Hôtel les mouettes</h3>
                                      <p>Nuit à partir de  <span class="price">23€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -120,7 +121,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="l'hotel de la mer">
                                  <div class="article-description">
-                                     <h3>Hôtel de la mer</h3>
+                                     <h3 class="positiontitre">Hôtel de la mer</h3>
                                      <p>Nuit à partir de  <span class="price">46€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -138,7 +139,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Hotel du panier">
                                  <div class="article-description">
-                                     <h3>Hôtel Le panier</h3>
+                                     <h3 class="positiontitre">Hôtel Le panier</h3>
                                      <p>Nuit à partir de  <span class="price">23€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -154,7 +155,7 @@
                              <a href="#">
                                  <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="l'hotel Amina">
                                  <div class="article-description">
-                                     <h3>Hôtel chez Amina</h3>
+                                     <h3 class="positiontitre">Hôtel chez Amina</h3>
                                      <p>Nuit à partir de <span class="price">96€</span></p>
                                      <div class="etoile">
                                          <i class="fa-solid fa-star"></i>
@@ -174,7 +175,7 @@
                   <aside>
                      <h2>Les plus populaires
                            <a href="#">
-                             <i class="fa-solid fa-chart-gantt"></i>
+                            <i class="fa-solid fa-chart-line"></i>
                             </a>
                      </h2>
                      <div id="contentaside">
@@ -302,20 +303,20 @@
            <div id="footercontent">
              <div class="footerColumn">
                  <h3 class="footertitre">A propos</h3>
-                 <a href="" class="footerColumnLink">Fonctionnment du site</a>
-                 <a href="" class="footerColumnLink">Conditions générales de vente</a>
-                 <a href="" class="footerColumnLink">Donnés et confidentialités</a>
+                 <a href="#" class="footerColumnLink">Fonctionnement du site</a>
+                 <a href="#" class="footerColumnLink">Conditions générales de vente</a>
+                 <a href="#" class="footerColumnLink">Données et confidentialité</a>
               </div>
              <div class="footerColumn">
                  <h3 class="footertitre">Nos hébergements</h3>
-                 <a href="" class="footerColumnLink">Charte qualité</a>
-                 <a href="" class="footerColumnLink">Soumettre votre hôtel</a>
+                 <a href="#" class="footerColumnLink">Charte qualité</a>
+                 <a href="#" class="footerColumnLink">Soumettre votre hôtel</a>
              </div>
         
              <div class="footerColumn">
                  <h3 class="footertitre">Assistance</h3>
-                 <a href="" class="footerColumnLink">Centre d'aide</a>
-                 <a href="" class="footerColumnLink">Nous contacter</a>
+                 <a href="#" class="footerColumnLink">Centre d'aide</a>
+                 <a href="#" class="footerColumnLink">Nous contacter</a>
              </div>
           </div>
      </footer>

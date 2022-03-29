@@ -378,7 +378,7 @@ main img, #am img {
 
 #booki img {
  height: 50px;
-margin-top: 10px;
+margin-top: 18px;
 }
 
 
@@ -410,11 +410,15 @@ color:#0065FC;
 border-top: 4px solid #0065FC;
 padding-top: 32px;
 transition: ease 0.1s;
-
-
 }
 
-
+#menu 
+{
+  color:#0065FC !important; ;
+  border-top: 4px solid #0065FC;
+  padding-top: 32px;
+  transition: ease 0.1s;
+}
 
 
 .titre h1 
@@ -448,7 +452,7 @@ margin-bottom: 10px;
 .box input[type="search"]
 {
 outline: none;
-font-size: 1.4em;
+font-size: 1.3em;
 border: 1px solid #F2F2F2;
 font-weight: bold;
 color: black;
@@ -457,10 +461,9 @@ vertical-align: middle;
 padding: 20px;
 }
 
-
-.box input[type="submit"]
+form button 
 {
-border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
 font-size: 1.3em;
 border: none;
 outline: none;
@@ -470,6 +473,11 @@ color: white;
 height: 62px;
 vertical-align: middle;
 padding: 20px;
+}
+
+#loop 
+{
+  display: none;
 }
 
 .box input[type="submit"]:hover
@@ -528,8 +536,6 @@ font-size: 1.3em;
 #filtres li:hover 
 {
  background-color: #DEEBFF;
- transform: scale(1.15);
-    transition: 300ms; 
 }
 
 
@@ -601,6 +607,11 @@ border-radius: 30px;
 width: 68%;
 }
 
+#contenu h2 
+{
+  margin-left: 15px;
+}
+
 #affichez
 {
   margin: 40px 0px 0px 0px;
@@ -611,7 +622,8 @@ width: 68%;
   color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1em;
+  padding: 0;
 }
 
 
@@ -662,24 +674,19 @@ font-size: 0.9em;
 
 }
 
-article.card:hover 
-{
-    transform: scale(1.15);
-    transition: 300ms;
-    position: relative;
-    bottom: 30px;
-}
+
 
 
 .article-description
 {
-  margin-left: 10px;
+  margin: 0 0 5px 15px;
 }
 
 
 .article-description p
 {
  text-decoration: none;
+ margin: 5px 0;
 }
 
 
@@ -739,6 +746,12 @@ display: flex;
 margin-top: 20px;
 font-size: 0.8em;
 color: #0065FC;
+margin: 11px 0;
+}
+
+.positiontitre
+{
+  margin: 8px 0;
 }
 
 
@@ -750,14 +763,15 @@ color: #F2F2F2;
 aside h2 
 {
   font-size: 1.5em;
-  padding: 20px;
+  margin-left: 15px;
 
 }
 
 aside h2 a 
 {
- position: absolute;
-
+ 
+ color: black;
+  float: right;
 }
 
 #titleactivity
@@ -769,9 +783,9 @@ aside h2 a
 #activityContent
 {
   display: flex;
-flex-wrap: nowrap;
-justify-content:  space-between;
-padding: 0px 15px 0px 15px;
+  flex-wrap: wrap;
+  justify-content:  space-between;
+  padding: 0px 15px 0px 15px;
 }
 
 #activityContent article.card 
@@ -796,7 +810,7 @@ padding: 0px 15px 0px 15px;
 
 #bloc 
 {
-  width: 22%;
+  width: 24%;
   display: flex;
   flex-direction: column;
  
@@ -826,7 +840,7 @@ background-color: #F2F2F2;
 #footercontent {
 display: flex;
  justify-content: space-between;
-margin: 0px 250px 0px 35px;
+margin: 0px 25px 0px 35px;
 
 }
 
@@ -860,6 +874,22 @@ flex-direction: column;
   }
 }
 
+@media screen and (min-width: 992px) and (max-width: 1153px)
+{
+  #filtres li {
+    margin-top: 10px;
+  }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1284px)
+{
+  aside .card img 
+  {
+    height: auto;
+  }
+}
+
 
 /* Tablettes */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -871,10 +901,16 @@ flex-direction: column;
     flex-direction: column;
   }
 
+   .titre 
+   {
+     
+     text-align: center;
+   }
   #contenu
   {
     width: 60%;
   }
+
 
   aside {
     width: 38%;
@@ -893,11 +929,11 @@ flex-direction: column;
     height: auto;
   }
 
-   aside .article-description 
-    {
-    
-    }
-
+  #menu {
+  border-top: none;
+  padding-top: 0;
+  transition: none;
+  }
 
   #contentaside {
     display: flex;
@@ -910,12 +946,32 @@ flex-direction: column;
   {
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
   }
 
   #filtres li 
   {
     margin-bottom: 20px;
+  }
+
+  #filtres li:hover 
+{
+  
+ background-color: none;
+ transform: none;
+     transition: none; 
+}
+
+ #presentation nav a:hover {
+  color:none;
+  border-top: none;
+  padding-top: none;
+  transition: none;
+  }
+
+  #filtres ul
+  {
+    flex-direction: column;
   }
 
   #filres span {
@@ -927,6 +983,8 @@ flex-direction: column;
     width: 48%;
 
   }
+
+ 
 
 
   #activityContent {
@@ -966,6 +1024,14 @@ flex-direction: column;
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 848px)
+{
+   aside article.card a .article-description
+  {
+    margin-left: 10px;
+  }
+}
+
 
 
 /*media screen pour mobile */
@@ -986,6 +1052,9 @@ flex-direction: column;
     header{
       
       padding: 0; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
     }
 
 
@@ -999,21 +1068,38 @@ flex-direction: column;
        display: flex;
        flex-direction: column;
        flex-wrap: initial;
-      
+       align-items: center;
+      }
+    
+      #filtres li:hover 
+      {
+        
+       background-color: none;
+       transform: none;
+           transition: none; 
       }
        
-
+      #menu 
+      {
+        border-top: none;
+        padding-top: 0;
+        transition: none;
+      }
       #presentation nav ul 
       {
+        
         margin-bottom: 25px;
       }
+
+      
       
       #presentation nav ul li {
      
        font-size: 1.2em;
        width: 50%;
-       text-align: center;
        border-bottom: 3px solid rgb(242, 242, 242);
+       padding: 0;
+        
      }
 
      #presentation nav a 
@@ -1031,8 +1117,10 @@ flex-direction: column;
         transition: none;
        }
 
+
+       
        .titre{
-        font-size: 0.8em;
+        
         margin-left: 5%;
        
       }
@@ -1042,11 +1130,33 @@ flex-direction: column;
       }
 
 
-      .box
+      .box input[type="search"]
       {
-        margin-left: 5%;
+        height: 50px;
+       padding: 0;
       }
 
+      form button {
+        height: 50px;
+        padding: 15px;
+        border-radius: 13px 13px 13px 13px;
+        }
+      #localisation span 
+      {
+        padding: 14px;
+      }
+      
+
+      .search 
+      {
+        display: none;
+      }
+
+      #loop 
+      {
+        display: flex;
+        font-size: 0.8em;
+      }
       
      
        
@@ -1058,6 +1168,10 @@ flex-direction: column;
       #filtres li {
         margin-top: 20px;
         padding-top: 0;
+      }
+
+      #filtres ul {
+        padding: 0;
       }
 
        #logement
@@ -1089,13 +1203,20 @@ flex-direction: column;
         border-radius: 0%;
        display: flex;
        align-items: center;
+       margin-bottom: 20px;
       }
+
+      aside .card img {
+        width: 50%;
+        }
 
       aside h2 
       {
         padding: 0;
         font-size: 1.4em;
       }
+    
+
     
 
       #contentaside
@@ -1128,13 +1249,10 @@ flex-direction: column;
         margin: 0;
         margin-left: 5%;
         margin-top: 30px;
-        font-size: 0.8em;
+        font-size: 1em;
       }
 
-      #affichez a {
-        padding: 0;
-        }
-
+  
 
       #contenu
       {
@@ -1206,3 +1324,7 @@ flex-direction: column;
 
      
   }
+
+     
+   
+  
