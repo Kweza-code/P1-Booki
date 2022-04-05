@@ -545,7 +545,8 @@ font-size: 1.3em;
 background-color: #DEEBFF;
 padding: 10px;
 border-radius: 40px;
- 
+
+
 }
 
 #filtres span
@@ -602,7 +603,7 @@ justify-content: space-between;
 #contenu 
 {
 background-color: #F2F2F2;
-padding: 30px;
+padding: 20px;
 border-radius: 30px;
 width: 68%;
 }
@@ -705,8 +706,6 @@ aside
  aside article.card 
  {
  width: 100%;
-
-
  }
 
  aside article.card a
@@ -734,7 +733,7 @@ aside article.card a .article-description{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  
 }
 
 
@@ -785,7 +784,7 @@ aside h2 a
   display: flex;
   flex-wrap: wrap;
   justify-content:  space-between;
-  padding: 0px 15px 0px 15px;
+ 
 }
 
 #activityContent article.card 
@@ -800,7 +799,7 @@ aside h2 a
 
 #longblock 
 {
-  width: 24%;
+  width: 21%;
 }
 #longblock img 
 {
@@ -810,7 +809,7 @@ aside h2 a
 
 #bloc 
 {
-  width: 24%;
+  width: 21%;
   display: flex;
   flex-direction: column;
  
@@ -909,24 +908,40 @@ flex-direction: column;
   #contenu
   {
     width: 60%;
+    padding: 15px;
+  }
+
+  #contenu h2 
+  {
+    font-size: 1.3em;
   }
 
 
   aside {
     width: 38%;
-
   }
 
   aside article.card 
   {
-    width: 100% ;
-    margin-bottom: 70px;
+    width: 73% ;
+    
+  }
+  aside article.card a
+  {
+    display: flex;
+    flex-direction: column;
   }
 
+  aside h2 
+  {
+    font-size: 1.3em;
+  }
   aside article.card img
   {
-    width: 50%;
-    height: auto;
+    width: 100%;
+    border-radius: 26px 26px 0px 0px;
+    height: 150px;
+    flex-wrap: wrap;
   }
 
   #menu {
@@ -1069,6 +1084,7 @@ flex-direction: column;
        flex-direction: column;
        flex-wrap: initial;
        align-items: center;
+       width: 100%;
       }
     
       #filtres li:hover 
@@ -1085,22 +1101,21 @@ flex-direction: column;
         padding-top: 0;
         transition: none;
       }
-      #presentation nav ul 
+
+      #presentation nav ul li 
       {
-        
-        margin-bottom: 25px;
+        text-align:center;
       }
 
-      
-      
-      #presentation nav ul li {
+      #presentation nav ul
+       {
+         padding-left: 0 !important;
+      }
      
-       font-size: 1.2em;
-       width: 50%;
-       border-bottom: 3px solid rgb(242, 242, 242);
-       padding: 0;
-        
-     }
+      nav
+       {
+         width: 100%;
+      }
 
      #presentation nav a 
      {
@@ -1134,12 +1149,15 @@ flex-direction: column;
       {
         height: 50px;
        padding: 0;
+       padding-left: 15px;
       }
 
       form button {
         height: 50px;
         padding: 15px;
         border-radius: 13px 13px 13px 13px;
+        margin-left: -20px;
+        
         }
       #localisation span 
       {
@@ -1162,29 +1180,34 @@ flex-direction: column;
        
       #filtres 
       {
-        margin-left: 5%;
+        margin: 12px 0px 0px 5%;
         flex-direction: column;
+        font-size: 0.8em;
       }
       #filtres li {
         margin-top: 20px;
         padding-top: 0;
       }
 
+   
+
       #filtres ul {
         padding: 0;
+        margin: 0;
       }
+
+      
 
        #logement
        {
-        margin-left: 5%;
+        margin: 12px 0px 0px 5%;
        }
   
        /*Main mobile */
 
       #contenugénéral{
         display: grid;
-      
-      
+  
       }
 
       #contenu
@@ -1192,11 +1215,16 @@ flex-direction: column;
         order: 2;
         background-color: white;
         padding: 0;
+        width: 100%;
       }
 
-      
+      #contenu h2 
+      {
+        padding:0;
+        font-size: 1.4em;
+        margin: 15px 0px 0px 5%;
+      } 
 
-     
       aside{
         order: 1;
         width: 100%;
@@ -1206,17 +1234,17 @@ flex-direction: column;
        margin-bottom: 20px;
       }
 
-      aside .card img {
-        width: 50%;
-        }
 
       aside h2 
       {
         padding: 0;
         font-size: 1.4em;
+        width: 100%;
       }
     
-
+       #affichez a {
+         font-size: 0.8em;
+       }
     
 
       #contentaside
@@ -1228,7 +1256,7 @@ flex-direction: column;
     
 
       aside article.card a .article-description { 
-        width: 100%;
+       
         flex-wrap: wrap;
         }
 
@@ -1236,6 +1264,7 @@ flex-direction: column;
       {
         display: flex;
         flex-direction: column;
+        padding: 6px 15px 0px 15px;
       }
       article.card
       {
@@ -1249,22 +1278,11 @@ flex-direction: column;
         margin: 0;
         margin-left: 5%;
         margin-top: 30px;
-        font-size: 1em;
+        font-size: 1.5em;
       }
 
   
 
-      #contenu
-      {
-        padding: 0;
-        width: 100%;
-      }
-      #contenu h2
-      {
-        padding:0;
-        margin-left: 5%;
-        font-size: 1.4em;
-      }
 
      
 
@@ -1272,6 +1290,7 @@ flex-direction: column;
       {
         flex-direction: column;
         align-items: center;
+        padding: 0px 15px 0px 15px;
       }
 
       #titleactivity
@@ -1299,7 +1318,7 @@ flex-direction: column;
       #longblock
       {
         width: 100%; 
-        margin-top: 30px;
+        
       }
       
       #longblock img 
