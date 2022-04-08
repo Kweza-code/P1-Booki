@@ -506,14 +506,9 @@ flex-direction: column;
 
 
 #filtres {
-display: flex;
 align-items: baseline;
 font-size: 1.3em;
-
-
-
-
-
+margin: 20px;
 }
 
 #filtres ul {
@@ -530,6 +525,7 @@ font-size: 1.3em;
  border-radius: 40px;
  color: #0065FC;
  cursor: pointer ;
+
 }
 
 
@@ -545,8 +541,7 @@ font-size: 1.3em;
 background-color: #DEEBFF;
 padding: 10px;
 border-radius: 40px;
-
-
+margin-left: -5px;
 }
 
 #filtres span
@@ -623,7 +618,7 @@ width: 68%;
   color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.17em;
   padding: 0;
 }
 
@@ -799,7 +794,7 @@ aside h2 a
 
 #longblock 
 {
-  width: 21%;
+  width: 23%;
 }
 #longblock img 
 {
@@ -809,7 +804,7 @@ aside h2 a
 
 #bloc 
 {
-  width: 21%;
+  width: 23%;
   display: flex;
   flex-direction: column;
  
@@ -919,17 +914,37 @@ flex-direction: column;
 
   aside {
     width: 38%;
+    padding: 15px;
+  }
+
+  article.card h3
+  {
+    margin: 8px;
+    min-height: 40px;
+  }
+
+  article.card a 
+  {
+    display: block !important;
   }
 
   aside article.card 
   {
     width: 73% ;
+
     
   }
   aside article.card a
   {
     display: flex;
     flex-direction: column;
+  }
+
+
+
+  aside article.card a .article-description
+  {
+    display: block !important;
   }
 
   aside h2 
@@ -1100,18 +1115,22 @@ flex-direction: column;
         border-top: none;
         padding-top: 0;
         transition: none;
+        border-bottom: 2px solid  #0065FC;
+        padding: 20px;
       }
 
       #presentation nav ul li 
       {
         text-align:center;
+        width: 50%;
       }
 
       #presentation nav ul
        {
          padding-left: 0 !important;
+         border-bottom: 2px solid #F2F2F2; ;
       }
-     
+
       nav
        {
          width: 100%;
