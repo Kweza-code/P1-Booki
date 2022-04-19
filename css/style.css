@@ -616,6 +616,11 @@ article.card {
 	margin-top: 43px;
 }
 
+article.card h3 
+{
+	font-size: 17px;
+}
+
 article.card img {
 	width: 100%;
 	border-radius: 26px 26px 0px 0px;
@@ -872,17 +877,6 @@ footer {
 	#filtres li {
 		margin-bottom: 20px;
 	}
-	#filtres li:hover {
-		background-color: none;
-		transform: none;
-		transition: none;
-	}
-	#presentation nav a:hover {
-		color: none;
-		border-top: none;
-		padding-top: none;
-		transition: none;
-	}
 	#filtres ul {
 		flex-direction: column;
 	}
@@ -951,11 +945,6 @@ footer {
 		align-items: center;
 		width: 100%;
 	}
-	#filtres li:hover {
-		background-color: none;
-		transform: none;
-		transition: none;
-	}
 	#menu {
 		border-top: none;
 		padding-top: 0;
@@ -980,11 +969,8 @@ footer {
 		padding-bottom: 0;
 	}
 	#presentation nav a:hover {
-		color: none;
-		border-bottom: none;
 		border-top: 0;
 		padding-bottom: 0;
-		transition: none;
 	}
 	.titre {
 		margin-left: 5%;
