@@ -508,7 +508,6 @@ form button {
 
 #filtres {
 	align-items: baseline;
-	font-size: 1.3em;
 	display: flex;
 }
 
@@ -627,6 +626,11 @@ article.card h3
 	font-size: 17px;
 }
 
+h2 
+{
+	font-size: 24px;
+}
+
 article.card img {
 	width: 100%;
 	border-radius: 26px 26px 0px 0px;
@@ -702,7 +706,6 @@ aside article.card a .article-description {
 }
 
 aside h2 {
-	font-size: 1.5em;
 	margin-left: 15px;
 }
 
@@ -955,17 +958,19 @@ footer {
 		border-top: none;
 		padding-top: 0;
 		transition: none;
-		border-bottom: 2px solid #0065FC;
 		padding: 20px;
 	}
 	#presentation nav ul li {
 		text-align: center;
 		width: 50%;
+		border-bottom: 2px solid #F2F2F2;
+	}
+	#presentation nav ul li:first-child {
+		border-color: #0065FC;
 	}
 	#presentation nav ul {
 		padding-left: 0 !important;
 		border-bottom: 2px solid #F2F2F2;
-		;
 	}
 	nav {
 		width: 100%;
@@ -982,12 +987,16 @@ footer {
 		margin-left: 5%;
 	}
 	.titre h1 {
-		font-size: 1.5em;
+		font-size: 24px;
+	}
+	.titre p {
+		font-size: 17px;
 	}
 	.box input[type="search"] {
 		height: 50px;
 		padding: 0;
 		padding-left: 15px;
+		font-size: 22px;
 	}
 	form button {
 		height: 50px;
@@ -1006,17 +1015,20 @@ footer {
 		font-size: 0.8em;
 	}
 	#filtres {
-		margin: 12px 0px 0px 5%;
+		margin: 12px -12px 0px 5%;
 		flex-direction: column;
-		font-size: 0.8em;
 	}
 	#filtres li {
 		margin-top: 20px;
 		padding-top: 0;
+		padding: 10px 5px 10px 40px;
 	}
 	#filtres ul {
 		padding: 0;
 		margin: 0;
+	}
+	#filtres span {
+		padding: 10px;
 	}
 	#logement {
 		margin: 12px 0px 0px 5%;
@@ -1033,8 +1045,7 @@ footer {
 	}
 	#contenu h2 {
 		padding: 0;
-		font-size: 1.4em;
-		margin: 15px 0px 0px 5%;
+		margin: 15px 0px -19px 5%;
 	}
 	aside {
 		order: 1;
@@ -1046,8 +1057,9 @@ footer {
 	}
 	aside h2 {
 		padding: 0;
-		font-size: 1.4em;
+		margin-bottom: -4px;
 		width: 100%;
+		margin-left: 0;
 	}
 	#affichez a {
 		font-size: 0.8em;
@@ -1058,6 +1070,9 @@ footer {
 	}
 	aside article.card a .article-description {
 		flex-wrap: wrap;
+	}
+	.article-description p {
+		margin-bottom: 20px;
 	}
 	#content {
 		display: flex;
