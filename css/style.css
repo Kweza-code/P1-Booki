@@ -41,8 +41,8 @@ main {
  */
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	font-size: 32px;
+	margin: 1.072px 0;
 }
 
 /* Grouping content ========================================================================== */
@@ -70,7 +70,7 @@ hr {
 pre {
 	font-family: monospace, monospace;
 	/* 1 */
-	font-size: 1em;
+	font-size: 16px;
 	/* 2 */
 }
 
@@ -117,7 +117,7 @@ kbd,
 samp {
 	font-family: monospace, monospace;
 	/* 1 */
-	font-size: 1em;
+	font-size: 16px;
 	/* 2 */
 }
 
@@ -143,11 +143,11 @@ sup {
 }
 
 sub {
-	bottom: -0.25em;
+	bottom: -4px;
 }
 
 sup {
-	top: -0.5em;
+	top: 8px;
 }
 
 
@@ -246,7 +246,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-	padding: 0.35em 0.75em 0.625em;
+	padding: 5.6px 12px 10px;
 }
 
 /**
@@ -420,7 +420,7 @@ main img,
 
 #presentation nav ul li {
 	padding: 20px;
-	font-size: 1.2em;
+	font-size: 19.2px;
 }
 
 #presentation nav ul li a {
@@ -444,7 +444,7 @@ main img,
 }
 
 .titre h1 {
-	font-size: 1.5em;
+	font-size: 24px;
 	padding-top: 15px;
 }
 
@@ -462,7 +462,7 @@ main img,
 
 .box input[type="search"] {
 	outline: none;
-	font-size: 1.3em;
+	font-size: 20.8px;
 	border: 1px solid #F2F2F2;
 	font-weight: bold;
 	color: black;
@@ -473,7 +473,7 @@ main img,
 
 form button {
 	border-radius: 0 20px 20px 0;
-	font-size: 1.3em;
+	font-size: 20.8px;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -500,7 +500,7 @@ form button {
 	text-decoration: none;
 	border-radius: 20px 0 0 20px;
 	border: 1px solid #E4E3E8;
-	font-size: 1.1em;
+	font-size: 17.6px;
 	padding: 20px;
 	background-color: #F2F2F2;
 	flex-direction: column;
@@ -692,7 +692,7 @@ aside article.card a .article-description {
 .etoile {
 	display: flex;
 	margin-top: 20px;
-	font-size: 0.8em;
+	font-size: 12.8px;
 	color: #0065FC;
 	margin: 11px 0;
 }
@@ -783,7 +783,7 @@ footer {
 .footerColumn a {
 	text-decoration: none;
 	color: black;
-	font-size: 1.1em;
+	font-size: 17.6px;
 }
 
 .footerColumn a:hover {
@@ -799,10 +799,10 @@ footer {
 
 @media screen and (min-width: 992px) and (max-width: 1085px) {
 	aside h2 {
-		font-size: 1.2em;
+		font-size: 19.2px;
 	}
     #contenu h2 {
-		font-size: 1.2em;
+		font-size: 19.2px;
 	}
 	
 	
@@ -836,7 +836,7 @@ footer {
 		padding: 15px;
 	}
 	#contenu h2 {
-		font-size: 1.3em;
+		font-size: 20.8px;
 	}
 	aside {
 		width: 38%;
@@ -860,7 +860,7 @@ footer {
 		display: block !important;
 	}
 	aside h2 {
-		font-size: 1.3em;
+		font-size: 20.8px;
 	}
 	aside article.card img {
 		width: 100%;
@@ -1012,7 +1012,7 @@ footer {
 	}
 	#loop {
 		display: flex;
-		font-size: 0.8em;
+		font-size: 12.8px;
 	}
 	#filtres {
 		margin: 12px -12px 0px 5%;
@@ -1062,7 +1062,7 @@ footer {
 		margin-left: 0;
 	}
 	#affichez a {
-		font-size: 0.8em;
+		font-size: 12.8px;
 	}
 	#contentaside {
 		width: 100%;
@@ -1088,7 +1088,7 @@ footer {
 		margin: 0;
 		margin-left: 5%;
 		margin-top: 30px;
-		font-size: 1.3em;
+		font-size: 20.8px;
 	}
 	#activityContent {
 		flex-direction: column;
