@@ -911,7 +911,7 @@ footer {
 		margin: 0;
 	}
 	.longblock img {
-		height: 150px;
+		height: 150px !important;
 	}
 	.bloc img {
 		height: 150px;
@@ -1015,7 +1015,7 @@ footer {
 		font-size: 12.8px;
 	}
 	#filtres {
-		margin: 12px -12px 0px 5%;
+		margin: 12px 0px 0px 5%;
 		flex-direction: column;
 	}
 	#filtres li {
